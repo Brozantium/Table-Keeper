@@ -1,0 +1,14 @@
+{
+  "title": "Table Keeper",
+  "description": "Table Keeper is a character builder, interactive sheet, game-master toolkit, and Owlbear Rodeo extension for tabletop sessions.",
+  "icons": {
+    "icon": "/table-keeper-mark.svg"
+  },
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
