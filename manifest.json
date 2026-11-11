@@ -1,16 +1,16 @@
 {
   "name": "Table Keeper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 1,
   "author": "Table Keeper contributors",
-  "icon": "./table-keeper-mark.svg",
+  "icon": "https://brozantium.github.io/Table-Keeper/table-keeper-mark.svg",
   "description": "A complete D&D 5e character builder, interactive character sheet, and game-master toolkit integrated with Owlbear Rodeo.",
   "action": {
     "title": "Table Keeper",
-    "icon": "./obr-icon.svg",
-    "popover": "./",
+    "icon": "https://brozantium.github.io/Table-Keeper/obr-icon.svg",
+    "popover": "https://brozantium.github.io/Table-Keeper/",
     "height": 700,
     "width": 600
   },
-  "background_url": "./background.html"
+  "background_url": "https://brozantium.github.io/Table-Keeper/background.html"
 }
