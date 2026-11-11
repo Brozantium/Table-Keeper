@@ -1,0 +1,97 @@
+/* Table Keeper's public guide and reference pages. */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+}
+a { color: var(--accent-text); text-underline-offset: 2px; }
+a:hover { color: var(--text); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+.site-header { background: var(--surface); border-bottom: 1px solid var(--border); }
+.header-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; padding-bottom: 8px; }
+.brand { font-weight: bold; font-size: 1.1rem; color: var(--text); text-decoration: none; }
+.brand-mark { color: var(--ornament); margin-right: 4px; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 4px 16px; padding-bottom: 10px; font-size: 0.95rem; }
+.site-nav a { color: var(--muted); text-decoration: none; }
+.site-nav a:hover, .site-nav a[aria-current] { color: var(--accent-text); text-decoration: underline; }
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.button.primary:hover { filter: brightness(1.1); color: var(--on-accent); }
+
+main { padding-top: 16px; padding-bottom: 48px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 8px 0 8px; }
+h2 { font-size: 1.35rem; margin: 32px 0 8px; }
+h3 { font-size: 1.1rem; margin: 20px 0 6px; }
+.lead { font-size: 1.1rem; color: var(--muted); margin-top: 0; }
+.muted { color: var(--muted); }
+.faint { color: var(--faint); font-size: 0.9em; }
+.tiny { font-size: 0.8rem; color: var(--faint); }
+.crumbs { font-size: 0.9rem; color: var(--faint); }
+.crumbs a { color: var(--faint); }
+.jump { font-size: 0.95rem; }
+
+.card { background: var(--surface); border: 1px solid var(--border); padding: 16px 20px; margin: 16px 0; }
+.card > h2:first-child { margin-top: 0; }
+.stat { border-top: 3px solid var(--accent); }
+
+.facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px 20px; margin: 0 0 16px; }
+.facts div { border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+.facts dt { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--faint); }
+.facts dd { margin: 0; }
+
+.table-wrap { overflow-x: auto; margin: 8px 0 16px; border: 1px solid var(--border); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { background: var(--sunken); font-weight: bold; white-space: nowrap; }
+tbody tr:last-child td { border-bottom: none; }
+table.abilities th, table.abilities td { text-align: center; }
+.tag { font-size: 0.7rem; border: 1px solid var(--border-strong); padding: 0 4px; text-decoration: none; color: var(--muted); }
+
+.link-grid { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 4px 20px; }
+.toc ol { margin: 0; padding-left: 20px; }
+.faq h2 { font-size: 1.15rem; }
+
+.cta { background: var(--surface); border: 1px solid var(--border-strong); padding: 16px 20px; margin: 40px 0 0; }
+.cta h2 { margin-top: 0; }
+
+.site-footer { border-top: 1px solid var(--border); background: var(--surface); padding: 16px 0 24px; font-size: 0.95rem; }
+.footer-links { line-height: 1.9; }
+
+@media (max-width: 640px) {
+  h1 { font-size: 1.6rem; }
+  .header-cta { padding: 6px 10px; font-size: 0.9rem; }
+  .brand { font-size: 1rem; }
+  .card { padding: 12px 14px; }
+}
+
+/* "5e spell" after a reference page's name: part of the H1 for search, quiet on screen. */
+.h1-kind { font-size: 0.55em; font-weight: normal; color: var(--faint); letter-spacing: 0.02em; white-space: nowrap; }
+.class-entry h3 { margin-bottom: 0.2em; }
+.class-entry .faint { margin-top: 0; font-size: 0.92rem; }
+
+/* A reference page's icon (seo-images.mjs): a medallion beside the heading, with its credit. */
+.ref-art { float: right; width: 132px; margin: 4px 0 12px 20px; text-align: center; }
+.ref-art img { display: block; width: 132px; height: 132px; padding: 16px; margin: 0 auto; border-radius: 50%; background: var(--surface); border: 1px solid var(--border-strong); box-shadow: inset 0 0 0 5px var(--surface), inset 0 0 0 6px var(--border); }
+.ref-art figcaption { margin-top: 6px; font-size: 0.72rem; line-height: 1.35; color: var(--faint); }
+.ref-art figcaption a { color: var(--faint); }
+.ref-art figcaption a:last-child { white-space: nowrap; }
+.ref-art ~ .card { clear: right; }
+.credit h3 { font-size: 1.05rem; margin-bottom: 2px; }
+.credit-icons { margin-top: 0; font-size: 0.92rem; color: var(--muted); }
+@media (max-width: 640px) {
+  .ref-art { width: 92px; margin-left: 12px; }
+  .ref-art img { width: 92px; height: 92px; padding: 11px; }
+}

@@ -1,0 +1,7027 @@
+[
+ {
+  "id": "aberrant-heir",
+  "name": "Aberrant Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "Your aberrant dragonmark has made life challenging since it manifested. You might have hidden it successfully for most of your life or managed to avoid notice. Alternatively, you might have encountered suspicion and fear, perhaps coupled with the outright antagonism of one or more dragonmarked houses. You might have formed an association with the House Tarkanan criminal organization (named for one of the most notorious leaders of the aberrant dragonmarked in the War of the Mark twenty-five centuries ago). Or you might struggle to find your own way in the world, relying on your wits and the power of your mark.",
+  "skillProficiencies": [
+   "History",
+   "Intimidation"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Disguise Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Dagger, Disguise Kit, Costume, Traveler’s Clothes, 16 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "cha"
+  ],
+  "feat": {
+   "featId": "aberrant-dragonmark"
+  },
+  "equipmentOptions": [
+   {
+    "id": "aberrant-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Dagger, Disguise Kit, Costume, Traveler’s Clothes, 16 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Dagger, Disguise Kit, Costume, Traveler’s Clothes, 16 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Disguise Kit",
+        "itemId": "disguise-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Costume",
+        "itemId": "costume",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 16
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "acolyte",
+  "name": "Acolyte",
+  "source": "Player's Handbook",
+  "description": "You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest's instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.",
+  "skillProficiencies": [
+   "Insight",
+   "Religion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Calligrapher's Supplies"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Calligrapher’s Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "magic-initiate",
+   "note": "Cleric"
+  },
+  "equipmentOptions": [
+   {
+    "id": "acolyte-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Calligrapher’s Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Calligrapher’s Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP",
+      "items": [
+       {
+        "name": "Calligrapher's Supplies",
+        "itemId": "calligrapher-s-supplies",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Book (prayers)",
+        "itemId": "book",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "any": "holy symbol",
+        "label": "Holy Symbol",
+        "quantity": 1
+       },
+       {
+        "name": "Parchment",
+        "itemId": "parchment-1-sheet",
+        "kind": "gear",
+        "quantity": 10
+       },
+       {
+        "name": "Robe",
+        "itemId": "robes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 8
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "agent-of-the-ninth-quill",
+  "name": "Agent of the Ninth Quill",
+  "source": "Arcana Unleashed",
+  "description": "Your sharp mind and keen burgling skills led you to fall in with the Ninth Quill, a collective of thieves, saboteurs, and spies who steal magical lore and relics from others. Through your escapades - from purloining magic items and arcane tomes to sabotaging groups of mages - you’ve developed cunning skills and magical tricks to further your spy craft.",
+  "skillProficiencies": [
+   "Arcana",
+   "Sleight of Hand"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Thieves' Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Dagger, Light Hammer, Thieves’ Tools, Iron Spikes, Rope, Traveler’s Clothes, 17 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "arcane-infiltrator"
+  },
+  "equipmentOptions": [
+   {
+    "id": "agent-of-the-ninth-quill-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Dagger, Light Hammer, Thieves’ Tools, Iron Spikes, Rope, Traveler’s Clothes, 17 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Dagger, Light Hammer, Thieves’ Tools, Iron Spikes, Rope, Traveler’s Clothes, 17 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Light Hammer",
+        "itemId": "light-hammer",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Thieves' Tools",
+        "itemId": "thieves-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Spikes, Iron",
+        "itemId": "spikes-iron-10",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 17
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "archaeologist",
+  "name": "Archaeologist",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "You’ve made a lifelong study of the lost and fallen cultures of the past, visiting their ruins, deciphering their written records, and examining their surviving masterworks. Perhaps you studied at Morgrave University or a similar institution, supplementing your time in the library with fieldwork amid ancient ruins in remote locations. Some archaeologists plunder the treasures of the past in search of wealth or fame, but most consider it their calling to learn from the past. In any case, the archaeologists of Eberron combine the qualities of learned historians with the grit of treasure hunters.",
+  "skillProficiencies": [
+   "History",
+   "Survival"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Cartographer's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Cartographer’s Tools, Bullseye Lantern, Map, Map or Scroll Case, Shovel, Tent, Traveler’s Clothes, 17 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "skilled"
+  },
+  "equipmentOptions": [
+   {
+    "id": "archaeologist-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Cartographer’s Tools, Bullseye Lantern, Map, Map or Scroll Case, Shovel, Tent, Traveler’s Clothes, 17 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Cartographer’s Tools, Bullseye Lantern, Map, Map or Scroll Case, Shovel, Tent, Traveler’s Clothes, 17 GP",
+      "items": [
+       {
+        "name": "Cartographer's Tools",
+        "itemId": "cartographer-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lantern, Bullseye",
+        "itemId": "lantern-bullseye",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Map",
+        "itemId": "map",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "any": "map or scroll case",
+        "label": "Map or Scroll Case",
+        "quantity": 1
+       },
+       {
+        "name": "Shovel",
+        "itemId": "shovel",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tent",
+        "itemId": "tent-two-person",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 17
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "artisan",
+  "name": "Artisan",
+  "source": "Player's Handbook",
+  "description": "You began mopping floors and scrubbing counters in an artisan’s workshop for a few coppers per day as soon as you were strong enough to carry a bucket. When you were old enough to apprentice, you learned to create basic crafts of your own, as well as how to sweet-talk the occasional demanding customer. Your trade has also given you a keen eye for detail.",
+  "skillProficiencies": [
+   "Investigation",
+   "Persuasion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Artisan's tools"
+    ],
+    "text": "Choose one type of Artisan's Tools"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Artisan's Tools (same as above), 2 Pouches, Traveler’s Clothes, 32 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "int"
+  ],
+  "feat": {
+   "featId": "crafter"
+  },
+  "equipmentOptions": [
+   {
+    "id": "artisan-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Artisan's Tools (same as above), 2 Pouches, Traveler’s Clothes, 32 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Artisan's Tools (same as above), 2 Pouches, Traveler’s Clothes, 32 GP",
+      "items": [
+       {
+        "any": "artisan’s tools",
+        "label": "Artisan's Tools",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 32
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bejeweled-conclave-spy",
+  "name": "Bejeweled Conclave Spy",
+  "source": "Arcana Unleashed",
+  "description": "Publicly, you’re a courtier, a mediator, or an entertainer. But behind that glamorous visage is a mind honed for gathering secrets. Trained by the enchanters of the Bejeweled Conclave, you know how to use your charm and wit (plus a little magic) to infiltrate organizations, uncover information, and broker deals.",
+  "skillProficiencies": [
+   "Deception",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Disguise Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Disguise Kit, Fine Clothes, Perfume, 5 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "arcane-eloquence"
+  },
+  "equipmentOptions": [
+   {
+    "id": "bejeweled-conclave-spy-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Disguise Kit, Fine Clothes, Perfume, 5 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Disguise Kit, Fine Clothes, Perfume, 5 GP",
+      "items": [
+       {
+        "name": "Disguise Kit",
+        "itemId": "disguise-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Perfume",
+        "itemId": "perfume-vial",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 5
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "carouser",
+  "name": "Carouser",
+  "source": "Astarion's Book of Hungers",
+  "description": "You grew to adulthood in the beating heart of a large city, such as Baldur’s Gate. You spent countless evenings in taverns, playhouses, parlors, and gambling dens, savoring all the city had to offer. You’re a natural at interacting with people to learn their secrets, whether over a high-stakes game or at a high-class soiree. You might have been thrown out of an establishment or ten, but only by people who don’t know how to party.",
+  "skillProficiencies": [
+   "Deception",
+   "Persuasion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Dagger, Gaming Set (same as above), Fine Clothes, Glass Bottle, Mirror, Perfume, Pouch, Tinderbox, 19 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "tireless-reveler"
+  },
+  "equipmentOptions": [
+   {
+    "id": "carouser-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Dagger, Gaming Set (same as above), Fine Clothes, Glass Bottle, Mirror, Perfume, Pouch, Tinderbox, 19 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Dagger, Gaming Set (same as above), Fine Clothes, Glass Bottle, Mirror, Perfume, Pouch, Tinderbox, 19 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bottle, Glass",
+        "itemId": "glass-bottle",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Mirror",
+        "itemId": "mirror",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Perfume",
+        "itemId": "perfume-vial",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 19
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "charlatan",
+  "name": "Charlatan",
+  "source": "Player's Handbook",
+  "description": "Once you were old enough to order an ale, you soon had a favorite stool in every tavern within ten miles of where you were born. As you traveled the circuit from public house to watering hole, you learned to prey on unfortunates who were in the market for a comforting lie or two—perhaps a sham potion or forged ancestry records.",
+  "skillProficiencies": [
+   "Deception",
+   "Sleight of Hand"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Forgery Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Forgery Kit, Costume, Fine Clothes, 15 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "cha"
+  ],
+  "feat": {
+   "featId": "skilled"
+  },
+  "equipmentOptions": [
+   {
+    "id": "charlatan-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Forgery Kit, Costume, Fine Clothes, 15 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Forgery Kit, Costume, Fine Clothes, 15 GP",
+      "items": [
+       {
+        "name": "Forgery Kit",
+        "itemId": "forgery-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Costume",
+        "itemId": "costume",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 15
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "chondathan-freebooter",
+  "name": "Chondathan Freebooter",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "Though most youths in Chondath accept their four-year term of compulsory military service, you bristled at that authoritarian attempt to control your life. You forsook your nationhood, discarded your given name, and worked as a freebooter with the first ship that would have you. Since then, you’ve traveled the Vilhon Reach. Though you’ve never sailed more than a few dozen leagues from land, you make up for it with deep local connections and the breadth of your experiences.",
+  "skillProficiencies": [
+   "Athletics",
+   "Sleight of Hand"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Weaver's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Dagger, Weaver’s Tools, Backpack, Ball Bearings, Basket, Bedroll, Bucket, Rations (3 days’ worth), Rope, Signal Whistle, Traveler’s Clothes, 38 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "wis"
+  ],
+  "feat": {
+   "featId": "skilled"
+  },
+  "equipmentOptions": [
+   {
+    "id": "chondathan-freebooter-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Dagger, Weaver’s Tools, Backpack, Ball Bearings, Basket, Bedroll, Bucket, Rations (3 days’ worth), Rope, Signal Whistle, Traveler’s Clothes, 38 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Dagger, Weaver’s Tools, Backpack, Ball Bearings, Basket, Bedroll, Bucket, Rations (3 days’ worth), Rope, Signal Whistle, Traveler’s Clothes, 38 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Weaver's Tools",
+        "itemId": "weaver-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Backpack",
+        "itemId": "backpack",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ball Bearings",
+        "itemId": "ball-bearings-bag-of-1-000",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Basket",
+        "itemId": "basket",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bucket",
+        "itemId": "bucket",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rations (3 days' worth)",
+        "itemId": "rations-1-day",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Signal Whistle",
+        "itemId": "signal-whistle",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 38
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cosmic-dawn-experiment",
+  "name": "Cosmic Dawn Experiment",
+  "source": "Arcana Unleashed",
+  "description": "Your body has been warped by the transmutation practices of the Bringers of the Cosmic Dawn. Perhaps you were inadvertently caught up in one of the organization’s experiments, or maybe you were a member of the organization and sought to improve your physical form through magical might. Whatever the case, you use your strange anatomy to your benefit.",
+  "skillProficiencies": [
+   "Athletics",
+   "Survival"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Artisan's tools"
+    ],
+    "text": "Choose one type of Artisan's Tools"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Artisan’s Tools (same as above), Backpack, Robe, Traveler’s Clothes, 30 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "con"
+  ],
+  "feat": {
+   "featId": "transmuted-anatomy"
+  },
+  "equipmentOptions": [
+   {
+    "id": "cosmic-dawn-experiment-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Artisan’s Tools (same as above), Backpack, Robe, Traveler’s Clothes, 30 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Artisan’s Tools (same as above), Backpack, Robe, Traveler’s Clothes, 30 GP",
+      "items": [
+       {
+        "any": "artisan’s tools",
+        "label": "Artisan's Tools",
+        "quantity": 1
+       },
+       {
+        "name": "Backpack",
+        "itemId": "backpack",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Robe",
+        "itemId": "robes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 30
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "covenant-of-the-grave-recruit",
+  "name": "Covenant of the Grave Recruit",
+  "source": "Arcana Unleashed",
+  "description": "Death has always fascinated you. You’ve studied that morbid topic alongside members of the Covenant of the Grave, analyzing the macabre with scientific precision. Though these studies, you’ve amassed knowledge of medication, necromancy, and history.",
+  "skillProficiencies": [
+   "History",
+   "Medicine"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Herbalism Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Dagger, Herbalism Kit, Book (anatomy), Shovel, 16 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "arcane-undertaker"
+  },
+  "equipmentOptions": [
+   {
+    "id": "covenant-of-the-grave-recruit-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Dagger, Herbalism Kit, Book (anatomy), Shovel, 16 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Dagger, Herbalism Kit, Book (anatomy), Shovel, 16 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Herbalism Kit",
+        "itemId": "herbalism-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Book (anatomy)",
+        "itemId": "book",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Shovel",
+        "itemId": "shovel",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 16
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "criminal",
+  "name": "Criminal",
+  "source": "Player's Handbook",
+  "description": "You eked out a living in dark alleyways, cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf, fending for yourself against the local thieves' guild and more fearsome lawbreakers.",
+  "skillProficiencies": [
+   "Sleight of Hand",
+   "Stealth"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Thieves' Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "int"
+  ],
+  "feat": {
+   "featId": "alert"
+  },
+  "equipmentOptions": [
+   {
+    "id": "criminal-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 2
+       },
+       {
+        "name": "Thieves' Tools",
+        "itemId": "thieves-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Crowbar",
+        "itemId": "crowbar",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 16
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "crucible-storm-chaser",
+  "name": "Crucible Storm Chaser",
+  "source": "Arcana Unleashed",
+  "description": "Your daredevil tendencies and thirst for excitement led you to the Crucible Keepers, an organization dedicated to studying natural and magical catastrophes. From playing with molten glass to charging into a hurricane’s eye, you thrive when disaster is mere steps away.",
+  "skillProficiencies": [
+   "Athletics",
+   "Nature"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Glassblower's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Glassblower’s Tools, Backpack, Rope, Traveler’s Clothes, 15 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "int"
+  ],
+  "feat": {
+   "featId": "arcane-overload"
+  },
+  "equipmentOptions": [
+   {
+    "id": "crucible-storm-chaser-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Glassblower’s Tools, Backpack, Rope, Traveler’s Clothes, 15 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Glassblower’s Tools, Backpack, Rope, Traveler’s Clothes, 15 GP",
+      "items": [
+       {
+        "name": "Glassblower's Tools",
+        "itemId": "glassblower-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Backpack",
+        "itemId": "backpack",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 15
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "dead-magic-dweller",
+  "name": "Dead Magic Dweller",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "The dead magic zones of the Anauroch desert are anathema to spellcasters and monsters that rely on magic - which is exactly why you made your life there. Perhaps you’re on the run from Red Wizards, or you ran afoul of a powerful djinni in Calimshan. Whatever the case, you decided that living in Anauroch was your best option. After long months or years, you’re stronger, wiser, and armed with hard-earned knowledge of desert medicine and wasteland survival.",
+  "skillProficiencies": [
+   "Medicine",
+   "Survival"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Leatherworker's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Greatclub, Leatherworker’s Tools, Bedroll, Blanket, Healer’s Kit, Pole, Rations (3 days’ worth), Tent, Tinderbox, 5 Torches, Traveler’s Clothes, Waterskin, 32 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "wis"
+  ],
+  "feat": {
+   "featId": "healer"
+  },
+  "equipmentOptions": [
+   {
+    "id": "dead-magic-dweller-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Greatclub, Leatherworker’s Tools, Bedroll, Blanket, Healer’s Kit, Pole, Rations (3 days’ worth), Tent, Tinderbox, 5 Torches, Traveler’s Clothes, Waterskin, 32 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Greatclub, Leatherworker’s Tools, Bedroll, Blanket, Healer’s Kit, Pole, Rations (3 days’ worth), Tent, Tinderbox, 5 Torches, Traveler’s Clothes, Waterskin, 32 GP",
+      "items": [
+       {
+        "name": "Greatclub",
+        "itemId": "greatclub",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Leatherworker's Tools",
+        "itemId": "leatherworker-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Blanket",
+        "itemId": "blanket",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Healer's Kit",
+        "itemId": "healer-s-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pole",
+        "itemId": "pole-10-ft",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rations (3 days' worth)",
+        "itemId": "rations-1-day",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tent",
+        "itemId": "tent-two-person",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Torch",
+        "itemId": "torch",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 32
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "dragon-cultist",
+  "name": "Dragon Cultist",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "You are an initiate of the Cult of the Dragon. You discovered or were brought to a cell cult, where you exemplified the values honored by dragon cultists: duplicity, secrecy, and determination. In exchange for your oath to serve the cult, the cult offered you the company of fellow dragon worshipers, plus access to resources that might help further your studies in the realms of arcana and occultism.",
+  "skillProficiencies": [
+   "Deception",
+   "Stealth"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Calligrapher's Supplies"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Calligrapher’s Supplies, Dagger, Glass Bottle, Lamp, Manacles, Oil (5 flasks), 2 Pouches, Robe, Rope, 30 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "int"
+  ],
+  "feat": {
+   "featId": "cult-of-the-dragon-initiate"
+  },
+  "equipmentOptions": [
+   {
+    "id": "dragon-cultist-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Calligrapher’s Supplies, Dagger, Glass Bottle, Lamp, Manacles, Oil (5 flasks), 2 Pouches, Robe, Rope, 30 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Calligrapher’s Supplies, Dagger, Glass Bottle, Lamp, Manacles, Oil (5 flasks), 2 Pouches, Robe, Rope, 30 GP",
+      "items": [
+       {
+        "name": "Calligrapher's Supplies",
+        "itemId": "calligrapher-s-supplies",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Bottle, Glass",
+        "itemId": "glass-bottle",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lamp",
+        "itemId": "lamp",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Manacles",
+        "itemId": "manacles",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Robe",
+        "itemId": "robes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 30
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "emerald-enclave-caretaker",
+  "name": "Emerald Enclave Caretaker",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "As a Caretaker with the Emerald Enclave, you take care of those who care for the world. Either alongside your fellow Emerald Enclave members or by yourself, you’ve learned essential skills for living with the land: how to track game, where to forage for useful herbs, and even how to forecast the weather. You use these talents to maintain the balance between civilization and the wilds and to rid the world of unnatural creatures.",
+  "skillProficiencies": [
+   "Nature",
+   "Survival"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Herbalism Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Shortbow, 20 Arrows, Herbalism Kit, Bedroll, Blanket, Pouch, Tent, Traveler’s Clothes, 13 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "emerald-enclave-fledgling"
+  },
+  "equipmentOptions": [
+   {
+    "id": "emerald-enclave-caretaker-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Shortbow, 20 Arrows, Herbalism Kit, Bedroll, Blanket, Pouch, Tent, Traveler’s Clothes, 13 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Shortbow, 20 Arrows, Herbalism Kit, Bedroll, Blanket, Pouch, Tent, Traveler’s Clothes, 13 GP",
+      "items": [
+       {
+        "name": "Shortbow",
+        "itemId": "shortbow",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Arrows (20)",
+        "itemId": "arrows-20",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Herbalism Kit",
+        "itemId": "herbalism-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Blanket",
+        "itemId": "blanket",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tent",
+        "itemId": "tent-two-person",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 13
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "entertainer",
+  "name": "Entertainer",
+  "source": "Player's Handbook",
+  "description": "You spent much of your youth following roving fairs and carnivals, performing odd jobs for musicians and acrobats in exchange for lessons. You may have learned how to walk a tightrope, how to play a lute in a distinct style, or how to recite poetry with impeccable diction. To this day, you thrive on applause and long for the stage.",
+  "skillProficiencies": [
+   "Acrobatics",
+   "Performance"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Musical instrument"
+    ],
+    "text": "Choose one type of Musical Instrument"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler’s Clothes, 11 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "cha"
+  ],
+  "feat": {
+   "featId": "musician"
+  },
+  "equipmentOptions": [
+   {
+    "id": "entertainer-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler’s Clothes, 11 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler’s Clothes, 11 GP",
+      "items": [
+       {
+        "any": "musical instrument",
+        "label": "Musical Instrument",
+        "quantity": 1
+       },
+       {
+        "name": "Costume",
+        "itemId": "costume",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Mirror",
+        "itemId": "mirror",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Perfume",
+        "itemId": "perfume-vial",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 11
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "familiar-trainer",
+  "name": "Familiar Trainer",
+  "source": "Arcana Unleashed",
+  "description": "A magical familiar bonded with you when you were young, accompanying you throughout your adolescence. Now, you can’t imagine life without your furry - or feathery, scaly, or slimy - friend at your side. You’ve learned to work in tandem with your familiar, and when adventure presents its challenges, your familiar is quick to remind you of the small joys in life.",
+  "skillProficiencies": [
+   "Animal Handling",
+   "Arcana"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Quarterstaff, Gaming Set (same as above), Bedroll, Bell, String, Tinderbox, Traveler’s Clothes, Waterskin, 44 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "familiar-friend"
+  },
+  "equipmentOptions": [
+   {
+    "id": "familiar-trainer-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Quarterstaff, Gaming Set (same as above), Bedroll, Bell, String, Tinderbox, Traveler’s Clothes, Waterskin, 44 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Quarterstaff, Gaming Set (same as above), Bedroll, Bell, String, Tinderbox, Traveler’s Clothes, Waterskin, 44 GP",
+      "items": [
+       {
+        "name": "Quarterstaff",
+        "itemId": "quarterstaff",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bell",
+        "itemId": "bell",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "String",
+        "itemId": "string",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 44
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "farmer",
+  "name": "Farmer",
+  "source": "Player's Handbook",
+  "description": "You grew up close to the land. Years tending animals and cultivating the earth rewarded you with patience and good health. You have a keen appreciation for nature’s bounty alongside a healthy respect for nature's wrath.",
+  "skillProficiencies": [
+   "Animal Handling",
+   "Nature"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Carpenter's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "wis"
+  ],
+  "feat": {
+   "featId": "tough"
+  },
+  "equipmentOptions": [
+   {
+    "id": "farmer-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP",
+      "items": [
+       {
+        "name": "Sickle",
+        "itemId": "sickle",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Carpenter's Tools",
+        "itemId": "carpenter-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Healer's Kit",
+        "itemId": "healer-s-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pot, Iron",
+        "itemId": "pot-iron",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Shovel",
+        "itemId": "shovel",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 30
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "flaming-fist-mercenary",
+  "name": "Flaming Fist Mercenary",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "The chief law enforcement branch of Baldur’s Gate is the Flaming Fist, a brawny mercenary guild led by the city’s grand duke. You once served as a Flaming Fist, where you learned how to preempt trouble with your intimidating stare and, when necessary, absorb deadly blows. Flaming Fist mercenaries, active or retired, are known as some of the toughest, most resilient warriors along the Sword Coast, and you seek to maintain that reputation.",
+  "skillProficiencies": [
+   "Intimidation",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Smith's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Mace, Smith’s Tools, Fine Clothes, Manacles, Portable Ram, 4 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "cha"
+  ],
+  "feat": {
+   "featId": "tough"
+  },
+  "equipmentOptions": [
+   {
+    "id": "flaming-fist-mercenary-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Mace, Smith’s Tools, Fine Clothes, Manacles, Portable Ram, 4 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Mace, Smith’s Tools, Fine Clothes, Manacles, Portable Ram, 4 GP",
+      "items": [
+       {
+        "name": "Mace",
+        "itemId": "mace",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Smith's Tools",
+        "itemId": "smith-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Manacles",
+        "itemId": "manacles",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ram, Portable",
+        "itemId": "ram-portable",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 4
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "genie-touched",
+  "name": "Genie Touched",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "Although genies no longer rule Calimshan, genie magic is still common in your homeland. Perhaps you inadvertently summoned a djinni from a magic lamp, or maybe you came upon an oasis guarded by a marid. A dao might have saved you from a landslide, or you bargained with an efreeti for fleeting wealth. However your fate intersected with that of a genie, the experience left you with a keen eye, a silver tongue, and more than a touch of magic.",
+  "skillProficiencies": [
+   "Perception",
+   "Persuasion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Glassblower's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Light Hammer, Glassblower’s Tools, Fine Clothes, Lamp, Oil (3 flasks), Waterskin, 2 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "magic-initiate",
+   "note": "Wizard"
+  },
+  "equipmentOptions": [
+   {
+    "id": "genie-touched-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Light Hammer, Glassblower’s Tools, Fine Clothes, Lamp, Oil (3 flasks), Waterskin, 2 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Light Hammer, Glassblower’s Tools, Fine Clothes, Lamp, Oil (3 flasks), Waterskin, 2 GP",
+      "items": [
+       {
+        "name": "Light Hammer",
+        "itemId": "light-hammer",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Glassblower's Tools",
+        "itemId": "glassblower-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lamp",
+        "itemId": "lamp",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 3
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 2
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "guard",
+  "name": "Guard",
+  "source": "Player's Handbook",
+  "description": "Your feet ache when you remember the countless hours you spent at your post in the tower. You were trained to keep one eye looking outside the wall, watching for marauders sweeping from the nearby forest, and your other eye looking inside the wall, searching for cutpurses and troublemakers.",
+  "skillProficiencies": [
+   "Athletics",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler’s Clothes, 12 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "alert"
+  },
+  "equipmentOptions": [
+   {
+    "id": "guard-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler’s Clothes, 12 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler’s Clothes, 12 GP",
+      "items": [
+       {
+        "name": "Spear",
+        "itemId": "spear",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Light Crossbow",
+        "itemId": "crossbow-light",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Bolts (20)",
+        "itemId": "crossbow-bolts-20",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Lantern, Hooded",
+        "itemId": "lantern-hooded",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Manacles",
+        "itemId": "manacles",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Quiver",
+        "itemId": "quiver",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 12
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "guide",
+  "name": "Guide",
+  "source": "Player's Handbook",
+  "description": "You came of age outdoors, far from settled lands. Your home was anywhere you chose to spread your bedroll. There are wonders in the wilderness— strange monsters, pristine forests and streams, overgrown ruins of great halls once trod by giants— and you learned to fend for yourself as you explored them. From time to time, you guided friendly nature priests who instructed you in the fundamentals of channeling the magic of the wild.",
+  "skillProficiencies": [
+   "Stealth",
+   "Survival"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Cartographer's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Shortbow, 20 Arrows, Cartographer’s Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "wis"
+  ],
+  "feat": {
+   "featId": "magic-initiate",
+   "note": "Druid"
+  },
+  "equipmentOptions": [
+   {
+    "id": "guide-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Shortbow, 20 Arrows, Cartographer’s Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Shortbow, 20 Arrows, Cartographer’s Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP",
+      "items": [
+       {
+        "name": "Shortbow",
+        "itemId": "shortbow",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Arrows (20)",
+        "itemId": "arrows-20",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Cartographer's Tools",
+        "itemId": "cartographer-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Quiver",
+        "itemId": "quiver",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tent",
+        "itemId": "tent-two-person",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 3
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "harper",
+  "name": "Harper",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "You accepted an invitation to join the Harpers, pledging an oath to uphold the Harper code and act in service to the common good. Like all Harpers, you understand the value of teamwork as well as when it’s best to go it alone. Harper veterans have taught you the order’s secrets—magical melodies, special watchwords, and legerdemain—and have entrusted you to use such knowledge to surveil and undermine the forces of evil.",
+  "skillProficiencies": [
+   "Performance",
+   "Sleight of Hand"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Disguise Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Disguise Kit, Bedroll, Costume, Grappling Hook, Rope, Traveler’s Clothes, 14 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "harper-agent"
+  },
+  "equipmentOptions": [
+   {
+    "id": "harper-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Disguise Kit, Bedroll, Costume, Grappling Hook, Rope, Traveler’s Clothes, 14 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Disguise Kit, Bedroll, Costume, Grappling Hook, Rope, Traveler’s Clothes, 14 GP",
+      "items": [
+       {
+        "name": "Disguise Kit",
+        "itemId": "disguise-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Costume",
+        "itemId": "costume",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Grappling Hook",
+        "itemId": "grappling-hook",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 14
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "haunted-one",
+  "name": "Haunted One",
+  "source": "Ravenloft - The Horrors Within",
+  "description": "You are haunted by the events of your past. Whether it was a lone terrible incident or an accumulation of painful moments, you bear the unshakable weight of what happened to you. You’ve tried to bury it and run away from it, to no avail; it can’t be slain with a sword or banished via magic. Nevertheless, you persist.",
+  "skillProficiencies": [
+   "Arcana",
+   "Survival"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Gaming Set (same as above), Crowbar, Holy Water (1 flask), Mirror, Oil(2 flasks), Signal Whistle, Tinderbox, Traveler’s Clothes, 5 Torches, Waterskin, and 14 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "survivor",
+   "category": "dark-gift",
+   "note": "Survivor or a Dark Gift feat of your choice"
+  },
+  "equipmentOptions": [
+   {
+    "id": "haunted-one-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Gaming Set (same as above), Crowbar, Holy Water (1 flask), Mirror, Oil(2 flasks), Signal Whistle, Tinderbox, Traveler’s Clothes, 5 Torches, Waterskin, and 14 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Gaming Set (same as above), Crowbar, Holy Water (1 flask), Mirror, Oil(2 flasks), Signal Whistle, Tinderbox, Traveler’s Clothes, 5 Torches, Waterskin, and 14 GP",
+      "items": [
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Crowbar",
+        "itemId": "crowbar",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Holy Water",
+        "itemId": "holy-water-flask",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Mirror",
+        "itemId": "mirror",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Signal Whistle",
+        "itemId": "signal-whistle",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Torch",
+        "itemId": "torch",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 14
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hermit",
+  "name": "Hermit",
+  "source": "Player's Handbook",
+  "description": "You spent your early years secluded in a hut or monastery located well beyond the outskirts of the nearest settlement. In those days, your only companions were the creatures of the forest and those who would occasionally visit to bring news of the outside world and supplies. The solitude allowed you to spend many hours pondering the mysteries of creation.",
+  "skillProficiencies": [
+   "Medicine",
+   "Religion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Herbalism Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "healer"
+  },
+  "equipmentOptions": [
+   {
+    "id": "hermit-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP",
+      "items": [
+       {
+        "name": "Quarterstaff",
+        "itemId": "quarterstaff",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Herbalism Kit",
+        "itemId": "herbalism-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Book (philosophy)",
+        "itemId": "book",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lamp",
+        "itemId": "lamp",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 3
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 16
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "horizon-weaver-initiate",
+  "name": "Horizon Weaver Initiate",
+  "source": "Arcana Unleashed",
+  "description": "Your adolescence was marked by unquenchable wanderlust. You left home and began your travels as soon as you were able. Along the way, you encountered the adventurous conjurers of the Horizon Weavers, who taught you some of their teleportation magic to further your explorations.",
+  "skillProficiencies": [
+   "Acrobatics",
+   "Survival"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Weaver's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Shortbow, 20 Arrows, Weaver’s Tools, Map, Quiver, Rope, Traveler’s Clothes, 18 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "wis"
+  ],
+  "feat": {
+   "featId": "portal-jumper"
+  },
+  "equipmentOptions": [
+   {
+    "id": "horizon-weaver-initiate-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Shortbow, 20 Arrows, Weaver’s Tools, Map, Quiver, Rope, Traveler’s Clothes, 18 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Shortbow, 20 Arrows, Weaver’s Tools, Map, Quiver, Rope, Traveler’s Clothes, 18 GP",
+      "items": [
+       {
+        "name": "Shortbow",
+        "itemId": "shortbow",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Arrows (20)",
+        "itemId": "arrows-20",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Weaver's Tools",
+        "itemId": "weaver-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Map",
+        "itemId": "map",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Quiver",
+        "itemId": "quiver",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 18
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-agent",
+  "name": "House Agent",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "You are connected to one of the dragonmarked houses, but you haven’t (yet) manifested a dragonmark. You might be a member of the family by birth or an employee of the house with no familial connection. You’ve earned your living by doing the business of the house, serving as the hands, feet, and eyes of house leadership in the world. You might have many old friends, mentors, and rivals in the house you serve, plus allies or enemies in other houses.",
+  "skillProficiencies": [
+   "Investigation",
+   "Persuasion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Artisan's tools"
+    ],
+    "text": "Choose one type of Artisan's Tools"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Artisan’s Tools (same as above), Fine Clothes, 20 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "lucky"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-agent-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Artisan’s Tools (same as above), Fine Clothes, 20 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Artisan’s Tools (same as above), Fine Clothes, 20 GP",
+      "items": [
+       {
+        "any": "artisan’s tools",
+        "label": "Artisan's Tools",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 20
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-cannith-heir",
+  "name": "House Cannith Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "As a scion of House Cannith, you carry a proud legacy. Cannith creates wonders of the modern world, and you’re expected to contribute to the ongoing success of the house through invention, scholarship, business, or diplomacy. The only thing that can stand in your way is the deep rift within your own house. The sooner the three barons sort out which of them is the true head of the house (and you, no doubt, have your preference), the sooner House Cannith can claim its rightful position of leadership among all the dragonmarked houses.",
+  "skillProficiencies": [
+   "Investigation",
+   "Sleight of Hand"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Artisan's tools"
+    ],
+    "text": "Choose one type of Artisan's Tools"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Artisan’s Tools (same as above), Crowbar, Fine Clothes, 2 Pouches, 17 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "int"
+  ],
+  "feat": {
+   "featId": "mark-of-making"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-cannith-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Artisan’s Tools (same as above), Crowbar, Fine Clothes, 2 Pouches, 17 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Artisan’s Tools (same as above), Crowbar, Fine Clothes, 2 Pouches, 17 GP",
+      "items": [
+       {
+        "any": "artisan’s tools",
+        "label": "Artisan's Tools",
+        "quantity": 1
+       },
+       {
+        "name": "Crowbar",
+        "itemId": "crowbar",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       }
+      ],
+      "gold": 17
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-deneith-heir",
+  "name": "House Deneith Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "As an heir of House Deneith, you’ve been trained for combat—not to seek it out, but not to shy from it either. You’ve learned the importance of duty, honor, and the laws used to govern society when duty and honor fail. As you established your name in the house, you might have worked as a bodyguard for some minor dignitary, as a mercenary, or as a marshal hunting fugitives. Now you’re prepared to claim your rightful standing in the mightiest of the dragonmarked houses.",
+  "skillProficiencies": [
+   "Insight",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Fine Clothes, Healer’s Kit, Quiver, 1 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "wis"
+  ],
+  "feat": {
+   "featId": "mark-of-sentinel"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-deneith-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Fine Clothes, Healer’s Kit, Quiver, 1 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Fine Clothes, Healer’s Kit, Quiver, 1 GP",
+      "items": [
+       {
+        "name": "Spear",
+        "itemId": "spear",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Shortbow",
+        "itemId": "shortbow",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Arrows (20)",
+        "itemId": "arrows-20",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Healer's Kit",
+        "itemId": "healer-s-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Quiver",
+        "itemId": "quiver",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 1
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-ghallanda-heir",
+  "name": "House Ghallanda Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "Thanks to your connections to House Ghallanda, you grew up accustomed to creature comforts, lively conversation, good drink, and delicious food. You might be a charming and witty scion of the house who loves nothing more than a pleasant evening beside a warm hearth. Or you could be a schemer who exploits bonds of trust and friendship to bend others to your will. You might pursue an adventuring career to master the cuisines of other cultures and ages, expand your network of useful contacts, or earn enough money to open your own inn.",
+  "skillProficiencies": [
+   "Insight",
+   "Persuasion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Cook's Utensils"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Cook’s Utensils, Fine Clothes, Iron Pot, Lamp, Oil (5 flasks), Perfume, 26 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "mark-of-hospitality"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-ghallanda-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Cook’s Utensils, Fine Clothes, Iron Pot, Lamp, Oil (5 flasks), Perfume, 26 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Cook’s Utensils, Fine Clothes, Iron Pot, Lamp, Oil (5 flasks), Perfume, 26 GP",
+      "items": [
+       {
+        "name": "Cook's Utensils",
+        "itemId": "cook-s-utensils",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pot, Iron",
+        "itemId": "pot-iron",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lamp",
+        "itemId": "lamp",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Perfume",
+        "itemId": "perfume-vial",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 26
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-jorasco-heir",
+  "name": "House Jorasco Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "House Jorasco teaches that illness and injury stalk the living like ghosts, robbing people of health and longevity. You’ve been taught ways to combat these scourges, both magically and medically. You’re trained to use those skills in the service of others—and to ascertain that you are always appropriately compensated for this service, ensuring the health and longevity of House Jorasco. You might be a kindly healer with no stomach for combat or a dispassionate specialist who knows exactly how to incapacitate or kill an enemy with precise strikes.",
+  "skillProficiencies": [
+   "Medicine",
+   "Stealth"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Herbalism Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Herbalism Kit, Fine Clothes, Healer’s Kit, 25 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "wis"
+  ],
+  "feat": {
+   "featId": "mark-of-healing"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-jorasco-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Herbalism Kit, Fine Clothes, Healer’s Kit, 25 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Herbalism Kit, Fine Clothes, Healer’s Kit, 25 GP",
+      "items": [
+       {
+        "name": "Herbalism Kit",
+        "itemId": "herbalism-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Healer's Kit",
+        "itemId": "healer-s-kit",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 25
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-kundarak-heir",
+  "name": "House Kundarak Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "As an heir of House Kundarak, you take great pride in your family and its work of safeguarding the valuables of Khorvaire. Your house has always been a leader among the clans of the Mror Holds. Though it has never held the crown, it has a reputation for professionalism, honor, and order. You might strive to uphold that reputation, you might place your own sense of honor over your family’s, or you could rebel against the house’s expectations and flout the demands of honor.",
+  "skillProficiencies": [
+   "Arcana",
+   "Investigation"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Thieves' Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Thieves’ Tools, Fine Clothes, 10 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "int"
+  ],
+  "feat": {
+   "featId": "mark-of-warding"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-kundarak-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Thieves’ Tools, Fine Clothes, 10 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Thieves’ Tools, Fine Clothes, 10 GP",
+      "items": [
+       {
+        "name": "Thieves' Tools",
+        "itemId": "thieves-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 10
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-lyrandar-heir",
+  "name": "House Lyrandar Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "As an heir of House Lyrandar, the wind is your ally, the sea and sky your dominion. Despite the devastation of the Last War, your house is on the ascendancy, buoyed by its mastery of the new airship technology. You might have spent your early career on the sea as a sailor or navigator; as a shipwright; or as a member of the Raincallers’ Guild, manipulating the weather and assisting with irrigation and similar public works. Or you might have been among the first in your house to take to the skies as part of an airship crew. Service to the house might call you to hunt pirates in the Lhazaar Sea, to explore ancient ruins in search of magical technology to bind elemental forces, or to salvage a wrecked airship in the Mournland.",
+  "skillProficiencies": [
+   "Acrobatics",
+   "Nature"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Navigator's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Navigator’s Tools, Fine Clothes, 10 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "cha"
+  ],
+  "feat": {
+   "featId": "mark-of-storm"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-lyrandar-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Navigator’s Tools, Fine Clothes, 10 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Navigator’s Tools, Fine Clothes, 10 GP",
+      "items": [
+       {
+        "name": "Navigator's Tools",
+        "itemId": "navigator-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 10
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-medani-heir",
+  "name": "House Medani Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "As a member of House Medani, your life revolves around subterfuge - not engaging in it, but preventing others from doing so. You see the world around you as an intricate web of schemes, plots, and counterplots. Assessing the range of possibilities, you use instinct to predict threats to your clients and defend against them well before those threats can turn into danger. Defending against an assassin’s blade is a job any Deneith sellsword or Tharashk enforcer can do - making sure no one ever draws that blade is the Medani way.",
+  "skillProficiencies": [
+   "Insight",
+   "Investigation"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Disguise Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Disguise Kit, Fine Clothes, 10 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "mark-of-detection"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-medani-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Disguise Kit, Fine Clothes, 10 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Disguise Kit, Fine Clothes, 10 GP",
+      "items": [
+       {
+        "name": "Disguise Kit",
+        "itemId": "disguise-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 10
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-orien-heir",
+  "name": "House Orien Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "Before the Last War, Orien’s influence covered Khorvaire, and its trade roads and lightning rails were the lifeblood of a vibrant kingdom. But the war cut those arteries, leaving Galifar dead and House Orien bloodied. While the house’s couriers and shippers still keep goods moving on both sides of the continent, finding a way to reestablish routes across the Mournland remains the house’s top priority. In the meantime, Orien adventurers can serve their house by investigating missing couriers, recovering goods stolen from caravans, and troubleshooting disruptions to the lightning rail.",
+  "skillProficiencies": [
+   "Acrobatics",
+   "Athletics"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Cartographer's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Cartographer’s Tools, Fine Clothes, Map, Map or Scroll Case, 18 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "int"
+  ],
+  "feat": {
+   "featId": "mark-of-passage"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-orien-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Cartographer’s Tools, Fine Clothes, Map, Map or Scroll Case, 18 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Cartographer’s Tools, Fine Clothes, Map, Map or Scroll Case, 18 GP",
+      "items": [
+       {
+        "name": "Cartographer's Tools",
+        "itemId": "cartographer-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Map",
+        "itemId": "map",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "any": "map or scroll case",
+        "label": "Map or Scroll Case",
+        "quantity": 1
+       }
+      ],
+      "gold": 18
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-phiarlan-heir",
+  "name": "House Phiarlan Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "Though you have seen wealth, fame, and beauty as a child of House Phiarlan, you consider knowledge (and the power it brings) the greatest treasure of all. You might pursue that power as an artist or performer, always alert for secrets even as you regale the world with story, song, acrobatics, or art. Or you might foster ties to the secretive espionage arm of your house: the Serpentine Table.",
+  "skillProficiencies": [
+   "Deception",
+   "Stealth"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Disguise Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Disguise Kit, Fine Clothes, 10 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "mark-of-shadow"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-phiarlan-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Disguise Kit, Fine Clothes, 10 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Disguise Kit, Fine Clothes, 10 GP",
+      "items": [
+       {
+        "name": "Disguise Kit",
+        "itemId": "disguise-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 10
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-sivis-heir",
+  "name": "House Sivis Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "For nearly thirty centuries, your family has worked to maintain order. Communication is the cord that binds civilization together, and your ancestors settled the disputes of sovereigns and helped the dragonmarked houses find a place in the world. Few people realize the influence House Sivis has had on the shape of the modern age—just as few know how often a royal adviser holds more power than the actual ruler. While the other dragonmarked houses fight for fame and recognition, House Sivis plays a long game of subtle influence behind the scenes, keeping order amid the chaos of unending intrigue.",
+  "skillProficiencies": [
+   "History",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Calligrapher's Supplies"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Calligrapher’s Supplies, Fine Clothes, Ink, 5 Ink Pens, Paper (30 sheets), Parchment (9 sheets), 8 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "mark-of-scribing"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-sivis-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Calligrapher’s Supplies, Fine Clothes, Ink, 5 Ink Pens, Paper (30 sheets), Parchment (9 sheets), 8 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Calligrapher’s Supplies, Fine Clothes, Ink, 5 Ink Pens, Paper (30 sheets), Parchment (9 sheets), 8 GP",
+      "items": [
+       {
+        "name": "Calligrapher's Supplies",
+        "itemId": "calligrapher-s-supplies",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ink",
+        "itemId": "ink-1-oz",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ink Pen",
+        "itemId": "ink-pen",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Paper",
+        "itemId": "paper-1-sheet",
+        "kind": "gear",
+        "quantity": 30
+       },
+       {
+        "name": "Parchment",
+        "itemId": "parchment-1-sheet",
+        "kind": "gear",
+        "quantity": 9
+       }
+      ],
+      "gold": 8
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-tharashk-heir",
+  "name": "House Tharashk Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "Heirs of other houses lead lives of luxury, but in House Tharashk you learned self-reliance from an early age. What your young house lacks in resources, it makes up for in spirit and determination. Tharashk has a destiny to fulfill, and you have a part in it. Whether in combat or in social interaction, you have learned to play the role of the hunter: study your enemies, exploit their weaknesses, and do whatever it takes to achieve victory.",
+  "skillProficiencies": [
+   "Perception",
+   "Survival"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Gaming Set (same as above), Climber’s Kit, Fine Clothes, Hunting Trap, Manacles, 2 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "mark-of-finding"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-tharashk-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Gaming Set (same as above), Climber’s Kit, Fine Clothes, Hunting Trap, Manacles, 2 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Gaming Set (same as above), Climber’s Kit, Fine Clothes, Hunting Trap, Manacles, 2 GP",
+      "items": [
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Climber's Kit",
+        "itemId": "climber-s-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Hunting Trap",
+        "itemId": "hunting-trap",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Manacles",
+        "itemId": "manacles",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 2
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-thuranni-heir",
+  "name": "House Thuranni Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "Given House Thuranni’s short history and focus on espionage, its leaders expect you to further the interests of the house at every opportunity. During the house’s formative years as an independent entity, every move you make has been watched closely. This isn’t to say that every Thuranni heir must actively spy at the behest of house elders. But even the house’s most insular artists and artisans must keep up with current political events and pass on or collect information when asked.",
+  "skillProficiencies": [
+   "Performance",
+   "Stealth"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Musical instrument"
+    ],
+    "text": "Choose one type of Musical Instrument"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Musical Instrument (same as above), Costume, Fine Clothes, 13 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "mark-of-shadow"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-thuranni-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Musical Instrument (same as above), Costume, Fine Clothes, 13 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Musical Instrument (same as above), Costume, Fine Clothes, 13 GP",
+      "items": [
+       {
+        "any": "musical instrument",
+        "label": "Musical Instrument",
+        "quantity": 1
+       },
+       {
+        "name": "Costume",
+        "itemId": "costume",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 13
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "house-vadalis-heir",
+  "name": "House Vadalis Heir",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "You have grown up with respect for both family and nature. You understand the culture of the Five Nations, but you don’t get drawn into the games of ambition and status that others play. You know the beauty and power inherent in life, the mysteries of birth and death, and the miracles that happen in between. Your insights into the natural world allow you to see through the lies and deception of city folk—and never let on how much of their subterfuge you recognize.",
+  "skillProficiencies": [
+   "Animal Handling",
+   "Nature"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Herbalism Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Herbalism Kit, Fine Clothes, Net, 29 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "mark-of-handling"
+  },
+  "equipmentOptions": [
+   {
+    "id": "house-vadalis-heir-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Herbalism Kit, Fine Clothes, Net, 29 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Herbalism Kit, Fine Clothes, Net, 29 GP",
+      "items": [
+       {
+        "name": "Herbalism Kit",
+        "itemId": "herbalism-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Net",
+        "itemId": "net",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 29
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ice-fisher",
+  "name": "Ice Fisher",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "You come from a proud line of ice fishers out of Ten-Towns in Icewind Dale. Catching knucklehead trout isn’t the most glorious trade in the North, but it’s an honest living. You’ve trained your senses for the slightest tug on the line, wrestled big trout out of ice-covered lakes, and gutted enough knucklehead trout to feed your village many times over. These experiences have toughened your body and mind for a life of adventuring.",
+  "skillProficiencies": [
+   "Animal Handling",
+   "Athletics"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Woodcarver's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Woodcarver’s Tools, Basket, Block and Tackle, Bucket, Chain, Hunting Trap, Net, Pole, Rations (3 days’ worth), Rope, Traveler’s Clothes, 32 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "con"
+  ],
+  "feat": {
+   "featId": "alert"
+  },
+  "equipmentOptions": [
+   {
+    "id": "ice-fisher-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Woodcarver’s Tools, Basket, Block and Tackle, Bucket, Chain, Hunting Trap, Net, Pole, Rations (3 days’ worth), Rope, Traveler’s Clothes, 32 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Woodcarver’s Tools, Basket, Block and Tackle, Bucket, Chain, Hunting Trap, Net, Pole, Rations (3 days’ worth), Rope, Traveler’s Clothes, 32 GP",
+      "items": [
+       {
+        "name": "Woodcarver's Tools",
+        "itemId": "woodcarver-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Basket",
+        "itemId": "basket",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Block and Tackle",
+        "itemId": "block-and-tackle",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bucket",
+        "itemId": "bucket",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Chain",
+        "itemId": "chain-10-ft",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Hunting Trap",
+        "itemId": "hunting-trap",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Net",
+        "itemId": "net",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pole",
+        "itemId": "pole-10-ft",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rations (3 days' worth)",
+        "itemId": "rations-1-day",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 32
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "inquisitive",
+  "name": "Inquisitive",
+  "source": "Eberron - Forge of the Artificer",
+  "description": "You have honed your talents of investigation and deduction—fueled by a boundless curiosity—to explore mysteries, find missing people, recover stolen goods, unearth corruption and conspiracies, and solve crimes. As an inquisitive, you might have pursued freelance work, signed on with an inquisitive agency (perhaps one licensed by a dragonmarked house such as Medani or Tharashk), reported for a broadsheet, or worked for a police force.",
+  "skillProficiencies": [
+   "Insight",
+   "Investigation"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Thieves' Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Thieves’ Tools, Bullseye Lantern, Crowbar, Oil (10 flasks), Traveler’s Clothes, 10 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "alert"
+  },
+  "equipmentOptions": [
+   {
+    "id": "inquisitive-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Thieves’ Tools, Bullseye Lantern, Crowbar, Oil (10 flasks), Traveler’s Clothes, 10 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Thieves’ Tools, Bullseye Lantern, Crowbar, Oil (10 flasks), Traveler’s Clothes, 10 GP",
+      "items": [
+       {
+        "name": "Thieves' Tools",
+        "itemId": "thieves-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lantern, Bullseye",
+        "itemId": "lantern-bullseye",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Crowbar",
+        "itemId": "crowbar",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 10
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 10
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "investigator",
+  "name": "Investigator",
+  "source": "Ravenloft - The Horrors Within",
+  "description": "You relentlessly seek the truth. Perhaps you witnessed something remarkable or terrible and now desire to unravel its mystery, or maybe you’re motivated by universal justice and honesty. Whether the cases you’re embroiled in are local crimes or eldritch conspiracies, you’re driven to reveal what others would keep hidden.",
+  "skillProficiencies": [
+   "Insight",
+   "Investigation"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Disguise Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Disguise Kit, Manacles, Shovel, Traveler’s Clothes, 3 Vials, and 16 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "sharp-eye",
+   "category": "dark-gift",
+   "note": "Sharp Eye or a Dark Gift feat of your choice"
+  },
+  "equipmentOptions": [
+   {
+    "id": "investigator-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Disguise Kit, Manacles, Shovel, Traveler’s Clothes, 3 Vials, and 16 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Disguise Kit, Manacles, Shovel, Traveler’s Clothes, 3 Vials, and 16 GP",
+      "items": [
+       {
+        "name": "Disguise Kit",
+        "itemId": "disguise-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Manacles",
+        "itemId": "manacles",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Shovel",
+        "itemId": "shovel",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Vial",
+        "itemId": "vial",
+        "kind": "gear",
+        "quantity": 3
+       }
+      ],
+      "gold": 16
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "knight-of-the-gauntlet",
+  "name": "Knight Of The Gauntlet",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "Not all who answer the call of a higher power are content to pore over scripture in a stuffy temple apse. You chose the path of the holy warrior by joining the Order of the Gauntlet. As a knight of the Gauntlet, you exercise righteous scorn for the forces of evil, unswerving camaraderie for your siblings in arms, and heartfelt compassion for the survivors of war. With weapon and holy symbol in hand, you’ve sworn not to rest until the light of justice has vanquished the shadow of chaos across Faerûn.",
+  "skillProficiencies": [
+   "Athletics",
+   "Medicine"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Smith's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Spear, Smith’s Tools, Bullseye Lantern, Holy Symbol, Manacles, Oil (5 flasks), Tinderbox, Traveler’s Clothes, 9 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "tyro-of-the-gauntlet"
+  },
+  "equipmentOptions": [
+   {
+    "id": "knight-of-the-gauntlet-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Spear, Smith’s Tools, Bullseye Lantern, Holy Symbol, Manacles, Oil (5 flasks), Tinderbox, Traveler’s Clothes, 9 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Spear, Smith’s Tools, Bullseye Lantern, Holy Symbol, Manacles, Oil (5 flasks), Tinderbox, Traveler’s Clothes, 9 GP",
+      "items": [
+       {
+        "name": "Spear",
+        "itemId": "spear",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Smith's Tools",
+        "itemId": "smith-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lantern, Bullseye",
+        "itemId": "lantern-bullseye",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "any": "holy symbol",
+        "label": "Holy Symbol",
+        "quantity": 1
+       },
+       {
+        "name": "Manacles",
+        "itemId": "manacles",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 9
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lords-alliance-vassal",
+  "name": "Lords' Alliance Vassal",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "You’ve pledged your loyalty to a member-city of the Lords’ Alliance. As an Alliance agent, you must uphold the tenets of the Alliance and seek to increase safety and prosperity along the Sword Coast. You’re sworn to bring honor and glory to your lord’s house, whether that means securing trade roads for a merchant-lord of Waterdeep or vanquishing monsters upriver of Daggerford. You’ve trained in the arts of swordplay and statecraft and are as deft with a blade as you are with a quill.",
+  "skillProficiencies": [
+   "Insight",
+   "Persuasion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Calligrapher's Supplies"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) 2 Javelins, Calligrapher’s Supplies, Fine Clothes, Ink, 5 Ink Pens, Parchment (9 sheets), 13 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "lords-alliance-agent"
+  },
+  "equipmentOptions": [
+   {
+    "id": "lords-alliance-vassal-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) 2 Javelins, Calligrapher’s Supplies, Fine Clothes, Ink, 5 Ink Pens, Parchment (9 sheets), 13 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "2 Javelins, Calligrapher’s Supplies, Fine Clothes, Ink, 5 Ink Pens, Parchment (9 sheets), 13 GP",
+      "items": [
+       {
+        "name": "Javelin",
+        "itemId": "javelin",
+        "kind": "weapon",
+        "quantity": 2
+       },
+       {
+        "name": "Calligrapher's Supplies",
+        "itemId": "calligrapher-s-supplies",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ink",
+        "itemId": "ink-1-oz",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ink Pen",
+        "itemId": "ink-pen",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Parchment",
+        "itemId": "parchment-1-sheet",
+        "kind": "gear",
+        "quantity": 9
+       }
+      ],
+      "gold": 13
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lorwyn-expert",
+  "name": "Lorwyn Expert",
+  "source": "Lorwyn - First Light",
+  "description": "You hail from Lorwyn, a land of eternal sunshine, or you have studied the place with great intensity. You consider the majestic creature Eirdu the living embodiment of the sun, and you love embarking on whimsical adventures. You hold your loved ones close, even if only emotionally, for you’ve seen some venture into Shadowmoor or beyond and become faded versions of themselves. You’re nevertheless courageous and always long for new experiences.",
+  "skillProficiencies": [
+   "Athletics",
+   "Nature"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Cartographer's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Quarterstaff, Cartographer’s Tools, Backpack, Basket, Parchment (4 sheets), Rope, Traveler’s Clothes, 29 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "wis"
+  ],
+  "feat": {
+   "featId": "child-of-the-sun"
+  },
+  "equipmentOptions": [
+   {
+    "id": "lorwyn-expert-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Quarterstaff, Cartographer’s Tools, Backpack, Basket, Parchment (4 sheets), Rope, Traveler’s Clothes, 29 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Quarterstaff, Cartographer’s Tools, Backpack, Basket, Parchment (4 sheets), Rope, Traveler’s Clothes, 29 GP",
+      "items": [
+       {
+        "name": "Quarterstaff",
+        "itemId": "quarterstaff",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Cartographer's Tools",
+        "itemId": "cartographer-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Backpack",
+        "itemId": "backpack",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Basket",
+        "itemId": "basket",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Parchment",
+        "itemId": "parchment-1-sheet",
+        "kind": "gear",
+        "quantity": 4
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 29
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "merchant",
+  "name": "Merchant",
+  "source": "Player's Handbook",
+  "description": "You were apprenticed to a trader, caravan master, or shopkeeper, learning the fundamentals of commerce. You traveled broadly, and you earned a living by buying and selling the raw materials artisans need to practice their craft or finished works from such crafters. You might have transported goods from one place to another (by ship, wagon, or caravan) or bought them from traveling traders and sold them in your own shop.",
+  "skillProficiencies": [
+   "Animal Handling",
+   "Persuasion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Navigator's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Navigator’s Tools, 2 Pouches, Traveler's Clothes, 22 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "lucky"
+  },
+  "equipmentOptions": [
+   {
+    "id": "merchant-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Navigator’s Tools, 2 Pouches, Traveler's Clothes, 22 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Navigator’s Tools, 2 Pouches, Traveler's Clothes, 22 GP",
+      "items": [
+       {
+        "name": "Navigator's Tools",
+        "itemId": "navigator-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 22
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mist-wanderer",
+  "name": "Mist Wanderer",
+  "source": "Ravenloft - The Horrors Within",
+  "description": "You once knew your home. But one day, the Mists rose and drew you into a Domain of Dread. Ever since, you have wandered between domains, braving the mercurial Mists as you search for a way home. Your time in these cursed realms has changed you, yet you find solace in communities of fellow wanderers throughout the Mists.",
+  "skillProficiencies": [
+   "Survival",
+   "Stealth"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Artisan's tools"
+    ],
+    "text": "Choose one type of Artisan's Tools"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Artisan’s Tools (same as above), Lamp, Oil (5 flasks), Pouch, Rope, Tinderbox, Traveler’s Clothes, and 30 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "wis"
+  ],
+  "feat": {
+   "category": "dark-gift",
+   "note": "A Dark Gift feat of your choice (see “Feats” later in this chapter; Mist Walker is recommended)"
+  },
+  "equipmentOptions": [
+   {
+    "id": "mist-wanderer-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Artisan’s Tools (same as above), Lamp, Oil (5 flasks), Pouch, Rope, Tinderbox, Traveler’s Clothes, and 30 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Artisan’s Tools (same as above), Lamp, Oil (5 flasks), Pouch, Rope, Tinderbox, Traveler’s Clothes, and 30 GP",
+      "items": [
+       {
+        "any": "artisan’s tools",
+        "label": "Artisan's Tools",
+        "quantity": 1
+       },
+       {
+        "name": "Lamp",
+        "itemId": "lamp",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 30
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "moonwell-pilgrim",
+  "name": "Moonwell Pilgrim",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "Like many who hail from the Moonshae Isles, you grew up revering the blessed land, its unique gods, and the mysterious shrines called the moonwells. As a moonwell pilgrim, you undertook a quest to visit and commune with every moonwell on (or off) the map. Along your idyllic journeys, you collected a repertoire of Moonshavian folk songs, painted landscapes of enchanting vistas, and even learned how to wield a bit of primal magic.",
+  "skillProficiencies": [
+   "Nature",
+   "Performance"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Painter's Supplies"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Quarterstaff, Painter’s Supplies, Bedroll, Bell, Pouch, Robe, String, Traveler’s Clothes, Waterskin, 34 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "magic-initiate",
+   "note": "Druid"
+  },
+  "equipmentOptions": [
+   {
+    "id": "moonwell-pilgrim-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Quarterstaff, Painter’s Supplies, Bedroll, Bell, Pouch, Robe, String, Traveler’s Clothes, Waterskin, 34 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Quarterstaff, Painter’s Supplies, Bedroll, Bell, Pouch, Robe, String, Traveler’s Clothes, Waterskin, 34 GP",
+      "items": [
+       {
+        "name": "Quarterstaff",
+        "itemId": "quarterstaff",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Painter's Supplies",
+        "itemId": "painter-s-supplies",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bell",
+        "itemId": "bell",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Robe",
+        "itemId": "robes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "String",
+        "itemId": "string",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 34
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mulhorandi-tomb-raider",
+  "name": "Mulhorandi Tomb Raider",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "You grew up in a land of living god-kings, and as a child you were told countless stories of ancient empires and buried cities. In these tales, Mulhorand was a land overflowing with forgotten riches—priceless treasures awaiting anyone cunning and brave enough to seek them out. You’ve taken it upon yourself to explore your homeland’s crypts, tombs, and pyramids to reclaim your people’s relics.",
+  "skillProficiencies": [
+   "Investigation",
+   "Religion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Mason's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Dagger, Light Hammer, Mason’s Tools, Backpack, Bedroll, Crowbar, Ladder, Pole, 2 Pouches, Rope, String, Tinderbox, 5 Torches, Traveler’s Clothes, Waterskin, 26 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "int"
+  ],
+  "feat": {
+   "featId": "lucky"
+  },
+  "equipmentOptions": [
+   {
+    "id": "mulhorandi-tomb-raider-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Dagger, Light Hammer, Mason’s Tools, Backpack, Bedroll, Crowbar, Ladder, Pole, 2 Pouches, Rope, String, Tinderbox, 5 Torches, Traveler’s Clothes, Waterskin, 26 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Dagger, Light Hammer, Mason’s Tools, Backpack, Bedroll, Crowbar, Ladder, Pole, 2 Pouches, Rope, String, Tinderbox, 5 Torches, Traveler’s Clothes, Waterskin, 26 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Light Hammer",
+        "itemId": "light-hammer",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Mason's Tools",
+        "itemId": "mason-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Backpack",
+        "itemId": "backpack",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Crowbar",
+        "itemId": "crowbar",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ladder",
+        "itemId": "ladder-10-ft",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pole",
+        "itemId": "pole-10-ft",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "String",
+        "itemId": "string",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Torch",
+        "itemId": "torch",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 26
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mythalkeeper",
+  "name": "Mythalkeeper",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "Mythals are sources of great magical power that can alter the Weave or even the very nature of reality. Most were constructed in antiquity, and many have since been damaged or gone dormant. As a mythalkeeper from the Dalelands, your first experience with a mythal was likely in the ruins of Myth Drannor. You roam Faerûn in search of other ruined places of power, hoping to learn more about the history and powers of mythals—or even restore a malfunctioning one.",
+  "skillProficiencies": [
+   "Arcana",
+   "History"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Jeweler's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Quarterstaff, Jeweler’s Tools, Perfume, Pouch, Robe, Shovel, String, Waterskin, 16 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "crafter"
+  },
+  "equipmentOptions": [
+   {
+    "id": "mythalkeeper-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Quarterstaff, Jeweler’s Tools, Perfume, Pouch, Robe, Shovel, String, Waterskin, 16 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Quarterstaff, Jeweler’s Tools, Perfume, Pouch, Robe, Shovel, String, Waterskin, 16 GP",
+      "items": [
+       {
+        "name": "Quarterstaff",
+        "itemId": "quarterstaff",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Jeweler's Tools",
+        "itemId": "jeweler-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Perfume",
+        "itemId": "perfume-vial",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Robe",
+        "itemId": "robes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Shovel",
+        "itemId": "shovel",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "String",
+        "itemId": "string",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 16
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "noble",
+  "name": "Noble",
+  "source": "Player's Handbook",
+  "description": "You were raised in a castle, surrounded by wealth, power, and privilege. Your family of minor aristocrats ensured that you received a first-class education, some of which you appreciated and some of which you resented. Your time in the castle, especially the many hours you spent observing your family at court, also taught you a great deal about leadership.",
+  "skillProficiencies": [
+   "History",
+   "Persuasion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Gaming Set (same as above), Fine Clothes, Perfume, 29 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "skilled"
+  },
+  "equipmentOptions": [
+   {
+    "id": "noble-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Gaming Set (same as above), Fine Clothes, Perfume, 29 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Gaming Set (same as above), Fine Clothes, Perfume, 29 GP",
+      "items": [
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Perfume",
+        "itemId": "perfume-vial",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 29
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "pact-seeker",
+  "name": "Pact Seeker",
+  "source": "D&D Beyond Drops - May 2026",
+  "description": "You had a purpose in mind. Perhaps you were seeking out knowledge or power. Or maybe you were in search of hidden secrets. One way or another, your journey lead you to seek out an extraplanar entity. Once you made contact, a deal was struck, and your life changed.",
+  "skillProficiencies": [
+   "Arcana",
+   "Persuasion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Calligrapher's Supplies"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Book, Calligrapher’s Supplies, Ink, Ink Pen, Parchment (10 sheets), Traveler’s Clothes, 2 GP; or (B) 50 GP.",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "category": "planar-pact",
+   "note": "Choose one Planar Pact feat"
+  },
+  "equipmentOptions": [
+   {
+    "id": "pact-seeker-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Book, Calligrapher’s Supplies, Ink, Ink Pen, Parchment (10 sheets), Traveler’s Clothes, 2 GP; or (B) 50 GP.",
+    "options": [
+     {
+      "key": "a",
+      "label": "Book, Calligrapher’s Supplies, Ink, Ink Pen, Parchment (10 sheets), Traveler’s Clothes, 2 GP",
+      "items": [
+       {
+        "name": "Book",
+        "itemId": "book",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Calligrapher's Supplies",
+        "itemId": "calligrapher-s-supplies",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ink",
+        "itemId": "ink-1-oz",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ink Pen",
+        "itemId": "ink-pen",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Parchment",
+        "itemId": "parchment-1-sheet",
+        "kind": "gear",
+        "quantity": 10
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 2
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "phantasmic-circus-trouper",
+  "name": "Phantasmic Circus Trouper",
+  "source": "Arcana Unleashed",
+  "description": "Whether as a performer or a circus hand, you found a home among the members of the Phantasmic Circus. As you traveled across the world bringing magic and wonder to excited audiences, you learned some illusion magic and honed your talents for performance and misdirection.",
+  "skillProficiencies": [
+   "Deception",
+   "Performance"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Disguise Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Disguise Kit, Gaming Set (any), Costume, Mirror, Traveler’s Clothes, 12 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "cha"
+  ],
+  "feat": {
+   "featId": "arcane-artist"
+  },
+  "equipmentOptions": [
+   {
+    "id": "phantasmic-circus-trouper-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Disguise Kit, Gaming Set (any), Costume, Mirror, Traveler’s Clothes, 12 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Disguise Kit, Gaming Set (any), Costume, Mirror, Traveler’s Clothes, 12 GP",
+      "items": [
+       {
+        "name": "Disguise Kit",
+        "itemId": "disguise-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Costume",
+        "itemId": "costume",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Mirror",
+        "itemId": "mirror",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 12
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "purple-dragon-squire",
+  "name": "Purple Dragon Squire",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "You’ve pledged your life to the safety of Cormyr and sought admission to that realm’s order of elite warriors: the Purple Dragon Knights. But before you have the chance to join the ranks officially, you must first serve as a knight’s squire. You’ve found a liege willing to take you on and teach you the order’s ways. Will you uphold the Purple Dragon Knights’ ideals of glory, honor, and strength and prove yourself worthy of knighthood?",
+  "skillProficiencies": [
+   "Animal Handling",
+   "Insight"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Navigator's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Spear, Navigator’s Tools, Fine Clothes, 9 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "purple-dragon-rook"
+  },
+  "equipmentOptions": [
+   {
+    "id": "purple-dragon-squire-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Spear, Navigator’s Tools, Fine Clothes, 9 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Spear, Navigator’s Tools, Fine Clothes, 9 GP",
+      "items": [
+       {
+        "name": "Spear",
+        "itemId": "spear",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Navigator's Tools",
+        "itemId": "navigator-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 9
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rashemi-wanderer",
+  "name": "Rashemi Wanderer",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "You spent years wandering the highlands of Rashemen, a dangerous windswept heath that’s dotted with ancient obelisks enchanted to imprison Fiends and home to dragons, gnolls, and other deadly creatures. Friendships are hard to find in such an isolated land, and you’ve learned to keep strangers at a distance.",
+  "skillProficiencies": [
+   "Intimidation",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Cartographer's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Cartographer’s Tools, Backpack, Bedroll, Hooded Lantern, Oil (3 flasks), Rope, Tinderbox, Traveler’s Clothes, Waterskin, 23 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "cha"
+  ],
+  "feat": {
+   "featId": "tough"
+  },
+  "equipmentOptions": [
+   {
+    "id": "rashemi-wanderer-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Cartographer’s Tools, Backpack, Bedroll, Hooded Lantern, Oil (3 flasks), Rope, Tinderbox, Traveler’s Clothes, Waterskin, 23 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Cartographer’s Tools, Backpack, Bedroll, Hooded Lantern, Oil (3 flasks), Rope, Tinderbox, Traveler’s Clothes, Waterskin, 23 GP",
+      "items": [
+       {
+        "name": "Cartographer's Tools",
+        "itemId": "cartographer-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Backpack",
+        "itemId": "backpack",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lantern, Hooded",
+        "itemId": "lantern-hooded",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 3
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 23
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sage",
+  "name": "Sage",
+  "source": "Player's Handbook",
+  "description": "You spent your formative years traveling between manors and monasteries, performing various odd jobs and services in exchange for access to their libraries. You whiled away many a long evening studying books and scrolls, learning the lore of the multiverse - even the rudiments of magic - and your mind yearns for more.",
+  "skillProficiencies": [
+   "Arcana",
+   "History"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Calligrapher's Supplies"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "magic-initiate",
+   "note": "Wizard"
+  },
+  "equipmentOptions": [
+   {
+    "id": "sage-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP",
+      "items": [
+       {
+        "name": "Quarterstaff",
+        "itemId": "quarterstaff",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Calligrapher's Supplies",
+        "itemId": "calligrapher-s-supplies",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Book (history)",
+        "itemId": "book",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Parchment",
+        "itemId": "parchment-1-sheet",
+        "kind": "gear",
+        "quantity": 8
+       },
+       {
+        "name": "Robe",
+        "itemId": "robes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 8
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sailor",
+  "name": "Sailor",
+  "source": "Player's Handbook",
+  "description": "You lived as a seafarer, wind at your back and decks swaying beneath your feet. You've perched on barstools in more ports of call than you can remember, faced mighty storms, and swapped stories with folk who live beneath the waves.",
+  "skillProficiencies": [
+   "Acrobatics",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Navigator's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "wis"
+  ],
+  "feat": {
+   "featId": "tavern-brawler"
+  },
+  "equipmentOptions": [
+   {
+    "id": "sailor-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Navigator's Tools",
+        "itemId": "navigator-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 20
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "scribe",
+  "name": "Scribe",
+  "source": "Player's Handbook",
+  "description": "You spent formative years in a scriptorium, a monastery dedicated to the preservation of knowledge, or a government agency, where you learned to write with a clear hand and produce finely written texts. Perhaps you scribed government documents or copied tomes of literature. You might have some skill as a writer of poetry, narrative, or scholarly research. Above all, you have a careful attention to detail, helping you avoid introducing mistakes to the documents you copy and create.",
+  "skillProficiencies": [
+   "Investigation",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Calligrapher's Supplies"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Calligrapher’s Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "featId": "skilled"
+  },
+  "equipmentOptions": [
+   {
+    "id": "scribe-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Calligrapher’s Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Calligrapher’s Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP",
+      "items": [
+       {
+        "name": "Calligrapher's Supplies",
+        "itemId": "calligrapher-s-supplies",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lamp",
+        "itemId": "lamp",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 3
+       },
+       {
+        "name": "Parchment",
+        "itemId": "parchment-1-sheet",
+        "kind": "gear",
+        "quantity": 12
+       }
+      ],
+      "gold": 23
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "seer-apprentice",
+  "name": "Seer Apprentice",
+  "source": "Arcana Unleashed",
+  "description": "As an apprentice among the Seers of Sea and Sky, you learned to interpret minor omens from the clouds above and the fathoms below. The organization’s rich network of libraries furthered your education, and you now travel across the world, imparting advice and aid to others.",
+  "skillProficiencies": [
+   "History",
+   "Insight"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Navigator's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Navigator’s Tools, 8 Candles, Ink, Ink Pen, Parchment (9 sheets), Pouch, Tinderbox, Traveler’s Clothes, 11 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "arcane-omens"
+  },
+  "equipmentOptions": [
+   {
+    "id": "seer-apprentice-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Navigator’s Tools, 8 Candles, Ink, Ink Pen, Parchment (9 sheets), Pouch, Tinderbox, Traveler’s Clothes, 11 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Navigator’s Tools, 8 Candles, Ink, Ink Pen, Parchment (9 sheets), Pouch, Tinderbox, Traveler’s Clothes, 11 GP",
+      "items": [
+       {
+        "name": "Navigator's Tools",
+        "itemId": "navigator-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Candle",
+        "itemId": "candle",
+        "kind": "gear",
+        "quantity": 8
+       },
+       {
+        "name": "Ink",
+        "itemId": "ink-1-oz",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ink Pen",
+        "itemId": "ink-pen",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Parchment",
+        "itemId": "parchment-1-sheet",
+        "kind": "gear",
+        "quantity": 9
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 11
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "shadowmasters-exile",
+  "name": "Shadowmasters Exile",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "You trained your whole life to become a member of the Shadowmasters, the mysterious thieves’ guild that controls the realm of Thesk from behind the scenes. Stealth and quick reflexes were just the start of your Shadowmaster education; you also needed to hone your ruthlessness to ensure the safety of the guild’s secrets. But one wrong move led to your expulsion from the order. Now you must walk your own path.",
+  "skillProficiencies": [
+   "Acrobatics",
+   "Stealth"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Thieves' Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) 2 Daggers, Thieves’ Tools, Caltrops, Costume, Grappling Hook, Iron Spikes, Mirror, 2 Pouches, Rope, Traveler’s Clothes, 3 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "savage-attacker"
+  },
+  "equipmentOptions": [
+   {
+    "id": "shadowmasters-exile-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) 2 Daggers, Thieves’ Tools, Caltrops, Costume, Grappling Hook, Iron Spikes, Mirror, 2 Pouches, Rope, Traveler’s Clothes, 3 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "2 Daggers, Thieves’ Tools, Caltrops, Costume, Grappling Hook, Iron Spikes, Mirror, 2 Pouches, Rope, Traveler’s Clothes, 3 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 2
+       },
+       {
+        "name": "Thieves' Tools",
+        "itemId": "thieves-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Caltrops",
+        "itemId": "caltrops-bag-of-20",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Costume",
+        "itemId": "costume",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Grappling Hook",
+        "itemId": "grappling-hook",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Spikes, Iron",
+        "itemId": "spikes-iron-10",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Mirror",
+        "itemId": "mirror",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Rope",
+        "itemId": "rope",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 3
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "shadowmoor-expert",
+  "name": "Shadowmoor Expert",
+  "source": "Lorwyn - First Light",
+  "description": "You are from Shadowmoor or have studied it for years. It’s a gloomy, chaotic place perpetually lit by pale moonlight. You might survive Shadowmoor’s merciless conditions thanks to your wit and cunning, or you might keep threats at bay with your brawn and bravery. Regardless of where you tread, you keenly understand that friendship is a rare commodity. You believe that knowing who to trust and who to keep at arm’s length isn’t just practical - it’s often a matter of life or death.",
+  "skillProficiencies": [
+   "Acrobatics",
+   "Deception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Glassblower's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Dagger, Glassblower’s Tools, Backpack, Hunting Trap, Lamp, Oil (3 flasks), Traveler’s Clothes, Waterskin, 8 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "shadowmoor-hexer"
+  },
+  "equipmentOptions": [
+   {
+    "id": "shadowmoor-expert-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Dagger, Glassblower’s Tools, Backpack, Hunting Trap, Lamp, Oil (3 flasks), Traveler’s Clothes, Waterskin, 8 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Dagger, Glassblower’s Tools, Backpack, Hunting Trap, Lamp, Oil (3 flasks), Traveler’s Clothes, Waterskin, 8 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Glassblower's Tools",
+        "itemId": "glassblower-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Backpack",
+        "itemId": "backpack",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Hunting Trap",
+        "itemId": "hunting-trap",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lamp",
+        "itemId": "lamp",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 3
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 8
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "soldier",
+  "name": "Soldier",
+  "source": "Player's Handbook",
+  "description": "You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield, protecting the realm by waging war.",
+  "skillProficiencies": [
+   "Athletics",
+   "Intimidation"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler’s Clothes, 14 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "con"
+  ],
+  "feat": {
+   "featId": "savage-attacker"
+  },
+  "equipmentOptions": [
+   {
+    "id": "soldier-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler’s Clothes, 14 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler’s Clothes, 14 GP",
+      "items": [
+       {
+        "name": "Spear",
+        "itemId": "spear",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Shortbow",
+        "itemId": "shortbow",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Arrows (20)",
+        "itemId": "arrows-20",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Healer's Kit",
+        "itemId": "healer-s-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Quiver",
+        "itemId": "quiver",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 14
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "spellfire-initiate",
+  "name": "Spellfire Initiate",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "You bear the gift of spellfire: a rare form of magic that channels the raw power of the Weave. Wielding spellfire takes a heavy toll on the body. You’ve trained both mind and body to efficiently wield this sacred power.",
+  "skillProficiencies": [
+   "Arcana",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Gaming Set (same as above), Arcane Focus (Crystal or Wand), 2 Pouches, Traveler’s Clothes, 36 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "int",
+   "cha"
+  ],
+  "feat": {
+   "featId": "spellfire-spark"
+  },
+  "equipmentOptions": [
+   {
+    "id": "spellfire-initiate-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Gaming Set (same as above), Arcane Focus (Crystal or Wand), 2 Pouches, Traveler’s Clothes, 36 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Gaming Set (same as above), Arcane Focus (Crystal or Wand), 2 Pouches, Traveler’s Clothes, 36 GP",
+      "items": [
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "any": "arcane focus",
+        "label": "Arcane Focus",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 36
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "spirit-medium",
+  "name": "Spirit Medium",
+  "source": "Ravenloft - The Horrors Within",
+  "description": "Through strange rituals and fateful encounters, you’ve discovered that you bear a unique connection to the spirits of the dead and damned. Your body is a conduit for such spirits, granting you prescient insight from beyond. But these spirits’ intentions aren’t always innocent, and their gifts come at a haunting cost.",
+  "skillProficiencies": [
+   "Insight",
+   "Religion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [],
+  "toolChoices": [
+   {
+    "choose": 1,
+    "from": [
+     "Gaming set"
+    ],
+    "text": "Choose one type of Gaming Set"
+   }
+  ],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Dagger, Gaming Set (same as above), Basket, Bell, 8 Candles, Ink, Ink Pen, Paper (5 sheets), Tinderbox, Traveler’s Clothes, and 32 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "category": "dark-gift",
+   "note": "Dark Gift feat of your choice (see “Feats”; Gathered Whispers is recommended)"
+  },
+  "equipmentOptions": [
+   {
+    "id": "spirit-medium-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Dagger, Gaming Set (same as above), Basket, Bell, 8 Candles, Ink, Ink Pen, Paper (5 sheets), Tinderbox, Traveler’s Clothes, and 32 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Dagger, Gaming Set (same as above), Basket, Bell, 8 Candles, Ink, Ink Pen, Paper (5 sheets), Tinderbox, Traveler’s Clothes, and 32 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Basket",
+        "itemId": "basket",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bell",
+        "itemId": "bell",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Candle",
+        "itemId": "candle",
+        "kind": "gear",
+        "quantity": 8
+       },
+       {
+        "name": "Ink",
+        "itemId": "ink-1-oz",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Ink Pen",
+        "itemId": "ink-pen",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Paper",
+        "itemId": "paper-1-sheet",
+        "kind": "gear",
+        "quantity": 5
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 32
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "vampire-devotee",
+  "name": "Vampire Devotee",
+  "source": "Astarion's Book of Hungers",
+  "description": "You were in service to a vampire or a small group of vampires lairing together. The Undead drank your blood more times than you can count. You might have served willingly, perhaps with aspirations of one day becoming a vampire yourself. Or you might have been magically charmed and retain only a few muddled memories of your time as a vampire familiar. In either case, your time in the vampire den is over.",
+  "skillProficiencies": [
+   "Persuasion",
+   "Stealth"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Cook's Utensils"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Cook’s Utensils, Fine Clothes, 2 Glass Bottles, Healer’s Kit, Perfume, Lamp, Oil (3 flasks), Waterskin, 19 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "con",
+   "cha"
+  ],
+  "feat": {
+   "featId": "vampire-s-plaything"
+  },
+  "equipmentOptions": [
+   {
+    "id": "vampire-devotee-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Cook’s Utensils, Fine Clothes, 2 Glass Bottles, Healer’s Kit, Perfume, Lamp, Oil (3 flasks), Waterskin, 19 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Cook’s Utensils, Fine Clothes, 2 Glass Bottles, Healer’s Kit, Perfume, Lamp, Oil (3 flasks), Waterskin, 19 GP",
+      "items": [
+       {
+        "name": "Cook's Utensils",
+        "itemId": "cook-s-utensils",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Bottle, Glass",
+        "itemId": "glass-bottle",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Healer's Kit",
+        "itemId": "healer-s-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Perfume",
+        "itemId": "perfume-vial",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lamp",
+        "itemId": "lamp",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 3
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 19
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "vampire-survivor",
+  "name": "Vampire Survivor",
+  "source": "Astarion's Book of Hungers",
+  "description": "You witnessed or survived a vampire attack. You might have been directly involved in this confrontation, or perhaps you were frozen in terror by what you saw. Regardless, you remain vigilant for monster attacks and pride yourself on being ready for anything. No vampire will catch you or your allies by surprise again.",
+  "skillProficiencies": [
+   "Insight",
+   "Religion"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Woodcarver's Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Woodcarver’s Tools, Crowbar, Hooded Lantern, Holy Symbol (reliquary), Holy Water, Mirror, Oil (3 flasks), Tinderbox, Traveler’s Clothes, Waterskin, 4 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "con",
+   "wis"
+  ],
+  "feat": {
+   "featId": "vampire-hunter"
+  },
+  "equipmentOptions": [
+   {
+    "id": "vampire-survivor-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Woodcarver’s Tools, Crowbar, Hooded Lantern, Holy Symbol (reliquary), Holy Water, Mirror, Oil (3 flasks), Tinderbox, Traveler’s Clothes, Waterskin, 4 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Woodcarver’s Tools, Crowbar, Hooded Lantern, Holy Symbol (reliquary), Holy Water, Mirror, Oil (3 flasks), Tinderbox, Traveler’s Clothes, Waterskin, 4 GP",
+      "items": [
+       {
+        "name": "Woodcarver's Tools",
+        "itemId": "woodcarver-s-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Crowbar",
+        "itemId": "crowbar",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lantern, Hooded",
+        "itemId": "lantern-hooded",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Reliquary",
+        "itemId": "reliquary",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Holy Water",
+        "itemId": "holy-water-flask",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Mirror",
+        "itemId": "mirror",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 3
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 4
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ward-of-the-sheltering-hands",
+  "name": "Ward of the Sheltering Hands",
+  "source": "Arcana Unleashed",
+  "description": "A turn of ill luck led you to the Sheltering Hands, an altruistic organization dedicated to defending the downtrodden. The organization helped you regain your footing and taught you some of its protective magic - in the hope that one day you too would shelter the less fortunate in their time of need.",
+  "skillProficiencies": [
+   "Insight",
+   "Medicine"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Cook's Utensils"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Cook’s Utensils, Blanket, Healer’s Kit, Lamp, Oil (3 flasks), Tinderbox, Traveler’s Clothes, Waterskin, 40 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "con",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "arcane-safeguard"
+  },
+  "equipmentOptions": [
+   {
+    "id": "ward-of-the-sheltering-hands-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Cook’s Utensils, Blanket, Healer’s Kit, Lamp, Oil (3 flasks), Tinderbox, Traveler’s Clothes, Waterskin, 40 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Cook’s Utensils, Blanket, Healer’s Kit, Lamp, Oil (3 flasks), Tinderbox, Traveler’s Clothes, Waterskin, 40 GP",
+      "items": [
+       {
+        "name": "Cook's Utensils",
+        "itemId": "cook-s-utensils",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Blanket",
+        "itemId": "blanket",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Healer's Kit",
+        "itemId": "healer-s-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lamp",
+        "itemId": "lamp",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 3
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Waterskin",
+        "itemId": "waterskin",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 40
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "wayfarer",
+  "name": "Wayfarer",
+  "source": "Player's Handbook",
+  "description": "You grew up on the streets surrounded by similarly ill-fated castoffs, a few of them friends and a few of them rivals. You slept where you could and did odd jobs for food. At times, when the hunger became unbearable, you resorted to theft. Still, you never lost your pride and never abandoned hope. Fate is not yet finished with you.",
+  "skillProficiencies": [
+   "Insight",
+   "Stealth"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Thieves' Tools"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "dex",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "featId": "lucky"
+  },
+  "equipmentOptions": [
+   {
+    "id": "wayfarer-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP",
+      "items": [
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 2
+       },
+       {
+        "name": "Thieves' Tools",
+        "itemId": "thieves-tools",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "any": "gaming set",
+        "label": "Gaming Set",
+        "quantity": 1
+       },
+       {
+        "name": "Bedroll",
+        "itemId": "bedroll",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "Clothes, Traveler's",
+        "itemId": "traveler-s-clothes",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 16
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zhentarim-mercenary",
+  "name": "Zhentarim Mercenary",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "description": "Maybe you needed the money. Maybe you longed for a family, no matter how dubious. Or maybe you’re just good at getting the job done by any means necessary. Whatever your reason, you enlisted with the Zhentarim, the most notorious mercenary guild in the Realms. Though the Zhentarim’s leaders insist the organization is more like a family than a shadowy syndicate, few families exhibit as much dishonesty, nepotism, and corruption as this one. You’ve honed your cunning, reflexes, and blade to climb the guild’s ranks.",
+  "skillProficiencies": [
+   "Intimidation",
+   "Perception"
+  ],
+  "skillChoices": [],
+  "toolProficiencies": [
+   "Forgery Kit"
+  ],
+  "toolChoices": [],
+  "languages": {
+   "choose": 0,
+   "fixed": []
+  },
+  "equipment": "Choose A or B: (A) Club, Dagger, Forgery Kit, Fine Clothes, Hooded Lantern, Oil (3 flasks), 2 Pouches, String, Tinderbox, 11 GP; or (B) 50 GP",
+  "feature": {
+   "name": "",
+   "text": ""
+  },
+  "characteristics": {
+   "personalityTraits": [],
+   "ideals": [],
+   "bonds": [],
+   "flaws": []
+  },
+  "variants": [],
+  "abilityScores": [
+   "str",
+   "dex",
+   "cha"
+  ],
+  "feat": {
+   "featId": "zhentarim-ruffian"
+  },
+  "equipmentOptions": [
+   {
+    "id": "zhentarim-mercenary-eq-0",
+    "choice": true,
+    "prose": "Choose A or B: (A) Club, Dagger, Forgery Kit, Fine Clothes, Hooded Lantern, Oil (3 flasks), 2 Pouches, String, Tinderbox, 11 GP; or (B) 50 GP",
+    "options": [
+     {
+      "key": "a",
+      "label": "Club, Dagger, Forgery Kit, Fine Clothes, Hooded Lantern, Oil (3 flasks), 2 Pouches, String, Tinderbox, 11 GP",
+      "items": [
+       {
+        "name": "Club",
+        "itemId": "club",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Dagger",
+        "itemId": "dagger",
+        "kind": "weapon",
+        "quantity": 1
+       },
+       {
+        "name": "Forgery Kit",
+        "itemId": "forgery-kit",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Clothes, Fine",
+        "itemId": "fine-clothes",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Lantern, Hooded",
+        "itemId": "lantern-hooded",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Oil",
+        "itemId": "oil-flask",
+        "kind": "gear",
+        "quantity": 3
+       },
+       {
+        "name": "Pouch",
+        "itemId": "pouch",
+        "kind": "gear",
+        "quantity": 2
+       },
+       {
+        "name": "String",
+        "itemId": "string",
+        "kind": "gear",
+        "quantity": 1
+       },
+       {
+        "name": "Tinderbox",
+        "itemId": "tinderbox",
+        "kind": "gear",
+        "quantity": 1
+       }
+      ],
+      "gold": 11
+     },
+     {
+      "key": "b",
+      "label": "50 GP",
+      "items": [],
+      "gold": 50
+     }
+    ]
+   }
+  ]
+ }
+]

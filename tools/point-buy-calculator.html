@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5e Point Buy Calculator (2014 &amp; 2024 Rules) | Table Keeper</title>
+<meta name="description" content="Free D&amp;D 5e point buy calculator: spend 27 points on scores from 8 to 15, add 2014 racial or 2024 background bonuses and share the build.">
+<link rel="canonical" href="point-buy-calculator.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Table Keeper">
+<meta property="og:title" content="5e Point Buy Calculator (2014 &amp; 2024 Rules) | Table Keeper">
+<meta property="og:description" content="Free D&amp;D 5e point buy calculator: spend 27 points on scores from 8 to 15, add 2014 racial or 2024 background bonuses and share the build.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5e Point Buy Calculator (2014 &amp; 2024 Rules) | Table Keeper">
+<meta name="twitter:description" content="Free D&amp;D 5e point buy calculator: spend 27 points on scores from 8 to 15, add 2014 racial or 2024 background bonuses and share the build.">
+<meta name="theme-color" content="#1f6d68">
+<link rel="icon" type="image/svg+xml" href="../table-keeper-mark.svg">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="stylesheet" href="../pages.css">
+<link rel="stylesheet" href="../tools.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many points do you get for point buy in 5e?","acceptedAnswer":{"@type":"Answer","text":"27, in both the 2014 and the 2024 rules. Every score starts at 8, and the costs run from 0 points for an 8 to 9 points for a 15."}},{"@type":"Question","name":"Can you go above 15 with point buy?","acceptedAnswer":{"@type":"Answer","text":"Not with the points themselves: 15 is the cap before bonuses. Your racial bonus (2014) or background bonus (2024) then adds up to +2, so the highest 1st-level score is 17."}},{"@type":"Question","name":"Did point buy change in the 2024 rules?","acceptedAnswer":{"@type":"Answer","text":"No. The budget, the 8–15 range and the costs are the same. What changed is where the bonuses come from: in 2024 they come from your background rather than your species, as +2 and +1 or +1, +1 and +1."}},{"@type":"Question","name":"Is point buy better than rolling?","acceptedAnswer":{"@type":"Answer","text":"It’s fairer rather than stronger. A rolled 4d6-drop-lowest set is worth about 31 points on average if you price it the same way, but 34% of rolled sets come out worse than 27 points. The ability score roller has the full odds."}},{"@type":"Question","name":"Can a score start below 8?","acceptedAnswer":{"@type":"Answer","text":"Not in point buy. The lowest you can buy is 8, which costs nothing. A racial penalty from an older 2014 race (like a kobold’s −2 Strength) can take a score below 8 afterwards; use Custom for that."}},{"@type":"Question","name":"Do I have to spend all 27 points?","acceptedAnswer":{"@type":"Answer","text":"No, but unspent points are simply lost, so there’s no reason to keep them. The calculator shows how many you have left."}}]}</script>
+<script defer src="point-buy-calculator.js"></script>
+<script src="../theme.js"></script>
+<link rel="stylesheet" href="../theme-system.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../index.html"><span class="brand-mark">TK</span> Table Keeper</a>
+    <a class="button primary header-cta" href="../index.html">Open the builder</a>
+  </div>
+  <nav class="wrap site-nav" aria-label="Site">
+    <a href="../tools.html" aria-current="page">Tools</a>
+  </nav>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">›</span> <a href="../tools.html">Tools</a> <span aria-hidden="true">›</span> <span aria-current="page">Point buy calculator</span></nav>
+
+<h1>5e point buy calculator</h1>
+<p class="lead">Spend 27 points on your six ability scores, add your racial (2014) or background (2024) bonuses and see the final scores and modifiers. The link updates as you go, so you can share the build.</p>
+<noscript><p class="tool-note">This calculator needs JavaScript to run. Everything it works out is explained below, with the tables to do it by hand.</p></noscript>
+<form class="tool pb" id="pb" data-costs="{&quot;8&quot;:0,&quot;9&quot;:1,&quot;10&quot;:2,&quot;11&quot;:3,&quot;12&quot;:4,&quot;13&quot;:5,&quot;14&quot;:7,&quot;15&quot;:9}" data-budget="27" data-array="15,14,13,12,10,8" aria-label="Point buy calculator">
+<div class="tool-bar">
+<fieldset class="choice"><legend>Rules</legend><div class="seg"><label><input type="radio" name="edition" value="2024" checked><span>2024</span></label><label><input type="radio" name="edition" value="2014"><span>2014</span></label></div></fieldset>
+<p class="pb-left" id="pb-left-box"><strong class="big" id="pb-left">27</strong> <span id="pb-left-label">points left of 27</span></p>
+</div>
+<div class="table-wrap"><table class="pb-table">
+<thead><tr><th scope="col">Ability</th><th scope="col">Score</th><th scope="col" class="num">Cost</th><th scope="col" class="num">Bonus</th><th scope="col" class="num">Total</th><th scope="col" class="num">Mod</th></tr></thead>
+<tbody>
+<tr data-ability="str"><th scope="row"><span class="ab-full">Strength</span><span class="ab-abbr" aria-hidden="true">Str</span></th>
+<td><select name="str" aria-label="Strength score"><option selected>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option></select></td>
+<td class="num pb-cost">0</td>
+<td class="num"><output class="pb-bonus">—</output><input class="pb-custom" type="number" name="custom-str" min="-2" max="2" step="1" value="0" inputmode="numeric" aria-label="Strength bonus" hidden></td>
+<td class="num pb-total">8</td>
+<td class="num pb-mod">−1</td></tr>
+<tr data-ability="dex"><th scope="row"><span class="ab-full">Dexterity</span><span class="ab-abbr" aria-hidden="true">Dex</span></th>
+<td><select name="dex" aria-label="Dexterity score"><option selected>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option></select></td>
+<td class="num pb-cost">0</td>
+<td class="num"><output class="pb-bonus">—</output><input class="pb-custom" type="number" name="custom-dex" min="-2" max="2" step="1" value="0" inputmode="numeric" aria-label="Dexterity bonus" hidden></td>
+<td class="num pb-total">8</td>
+<td class="num pb-mod">−1</td></tr>
+<tr data-ability="con"><th scope="row"><span class="ab-full">Constitution</span><span class="ab-abbr" aria-hidden="true">Con</span></th>
+<td><select name="con" aria-label="Constitution score"><option selected>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option></select></td>
+<td class="num pb-cost">0</td>
+<td class="num"><output class="pb-bonus">—</output><input class="pb-custom" type="number" name="custom-con" min="-2" max="2" step="1" value="0" inputmode="numeric" aria-label="Constitution bonus" hidden></td>
+<td class="num pb-total">8</td>
+<td class="num pb-mod">−1</td></tr>
+<tr data-ability="int"><th scope="row"><span class="ab-full">Intelligence</span><span class="ab-abbr" aria-hidden="true">Int</span></th>
+<td><select name="int" aria-label="Intelligence score"><option selected>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option></select></td>
+<td class="num pb-cost">0</td>
+<td class="num"><output class="pb-bonus">—</output><input class="pb-custom" type="number" name="custom-int" min="-2" max="2" step="1" value="0" inputmode="numeric" aria-label="Intelligence bonus" hidden></td>
+<td class="num pb-total">8</td>
+<td class="num pb-mod">−1</td></tr>
+<tr data-ability="wis"><th scope="row"><span class="ab-full">Wisdom</span><span class="ab-abbr" aria-hidden="true">Wis</span></th>
+<td><select name="wis" aria-label="Wisdom score"><option selected>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option></select></td>
+<td class="num pb-cost">0</td>
+<td class="num"><output class="pb-bonus">—</output><input class="pb-custom" type="number" name="custom-wis" min="-2" max="2" step="1" value="0" inputmode="numeric" aria-label="Wisdom bonus" hidden></td>
+<td class="num pb-total">8</td>
+<td class="num pb-mod">−1</td></tr>
+<tr data-ability="cha"><th scope="row"><span class="ab-full">Charisma</span><span class="ab-abbr" aria-hidden="true">Cha</span></th>
+<td><select name="cha" aria-label="Charisma score"><option selected>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option></select></td>
+<td class="num pb-cost">0</td>
+<td class="num"><output class="pb-bonus">—</output><input class="pb-custom" type="number" name="custom-cha" min="-2" max="2" step="1" value="0" inputmode="numeric" aria-label="Charisma bonus" hidden></td>
+<td class="num pb-total">8</td>
+<td class="num pb-mod">−1</td></tr>
+</tbody></table></div>
+<fieldset class="pb-bonuses"><legend id="pb-bonus-legend">Background bonuses</legend>
+<div class="seg">
+<label><input type="radio" name="pattern" value="21" checked><span>+2 and +1</span></label><label><input type="radio" name="pattern" value="111"><span>+1, +1, +1</span></label><label data-edition="2014" hidden><input type="radio" name="pattern" value="custom"><span>Custom</span></label>
+</div>
+<div class="pb-picks"><label class="field pick"><span class="pick-label">+2 to</span><select name="pick0"><option value="">Choose…</option><option value="str">Strength</option><option value="dex">Dexterity</option><option value="con">Constitution</option><option value="int">Intelligence</option><option value="wis">Wisdom</option><option value="cha">Charisma</option></select></label><label class="field pick"><span class="pick-label">+1 to</span><select name="pick1"><option value="">Choose…</option><option value="str">Strength</option><option value="dex">Dexterity</option><option value="con">Constitution</option><option value="int">Intelligence</option><option value="wis">Wisdom</option><option value="cha">Charisma</option></select></label><label class="field pick" hidden><span class="pick-label">+1 to</span><select name="pick2"><option value="">Choose…</option><option value="str">Strength</option><option value="dex">Dexterity</option><option value="con">Constitution</option><option value="int">Intelligence</option><option value="wis">Wisdom</option><option value="cha">Charisma</option></select></label></div>
+<p class="faint pb-note" data-edition="2024">Your background lists three abilities: put the increases on those. No score can go above 20.</p>
+<p class="faint pb-note" data-edition="2014" hidden>Use your race’s bonuses, or move them anywhere with Tasha’s Customizing Your Origin. Pick Custom to enter fixed bonuses, like a mountain dwarf’s +2 Strength and +2 Constitution or a human’s +1 to everything.</p>
+</fieldset>
+<p class="tool-msg" id="pb-msg" role="status" aria-live="polite"></p>
+<div class="tool-actions">
+<button type="button" id="pb-array">Use the standard array</button>
+<button type="button" id="pb-reset">Reset to 8s</button>
+<button type="button" id="pb-copy">Copy link to this build</button>
+</div>
+<p class="pb-summary">Total of your modifiers: <strong id="pb-mods">−6</strong></p>
+</form>
+
+<h2>How point buy works</h2>
+<p>Point buy is the fair way to make ability scores: everyone at the table gets the same budget, so no one is stuck with bad rolls. Every score starts at 8 and you have 27 points to spend raising them. No score can go above 15 or below 8 before bonuses, and you don’t have to spend every point, though there’s nothing to gain by saving them.</p>
+<p>Each step costs 1 point up to 13. The last two steps cost 2 points each, so a 15 costs 9 points, a third of your budget. That’s deliberate: it keeps a character from being great at everything. The rule is the same in the 2014 Player’s Handbook and the 2024 one.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Score</th><th scope="col">Point cost</th><th scope="col">Cost of this step</th><th scope="col">Modifier</th></tr></thead><tbody><tr><td>8</td><td>0</td><td>—</td><td>−1</td></tr><tr><td>9</td><td>1</td><td>+1</td><td>−1</td></tr><tr><td>10</td><td>2</td><td>+1</td><td>+0</td></tr><tr><td>11</td><td>3</td><td>+1</td><td>+0</td></tr><tr><td>12</td><td>4</td><td>+1</td><td>+1</td></tr><tr><td>13</td><td>5</td><td>+1</td><td>+1</td></tr><tr><td>14</td><td>7</td><td>+2</td><td>+2</td></tr><tr><td>15</td><td>9</td><td>+2</td><td>+2</td></tr></tbody></table></div>
+<h2>Adding your bonuses: 2014 and 2024</h2>
+<p><strong>2014 rules.</strong> Your race adds to your scores after you buy them: a half-orc gets +2 Strength and +1 Constitution, a human +1 to all six. Tasha’s Cauldron of Everything lets any race move its bonuses, usually as +2 to one ability and +1 to another, and the newer races from Monsters of the Multiverse choose +2 and +1 or +1 to three abilities. Pick Custom in the calculator to enter a race’s exact bonuses.</p>
+<p><strong>2024 rules.</strong> Species no longer change ability scores. Your background lists three abilities, and you either add +2 to one of them and +1 to another, or +1 to all three. No score can go above 20. Point buy itself is unchanged: 27 points, the same costs.</p>
+<p>Modifiers go up on even numbers, so a +1 is worth most on an odd score: 15 becomes 16 and the modifier goes from +2 to +3. That’s why many builds buy a 15 and put the +2 on it for a 17, then take a +1 on an odd score with a feat or Ability Score Improvement later.</p>
+<h2>Worked example</h2>
+<p>A 2024 wizard buys Intelligence 15 (9 points), Dexterity 14 (7), Constitution 14 (7), Wisdom 10 (2), Charisma 10 (2) and Strength 8 (0): 27 points, none left. With a background that lists Intelligence and Constitution, the +2 goes on Intelligence and the +1 on Constitution.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Ability</th><th scope="col">Bought</th><th scope="col">Bonus</th><th scope="col">Final</th><th scope="col">Modifier</th></tr></thead><tbody><tr><td>Strength</td><td>8</td><td>—</td><td>8</td><td>−1</td></tr><tr><td>Dexterity</td><td>14</td><td>—</td><td>14</td><td>+2</td></tr><tr><td>Constitution</td><td>14</td><td>+1</td><td>15</td><td>+2</td></tr><tr><td>Intelligence</td><td>15</td><td>+2</td><td>17</td><td>+3</td></tr><tr><td>Wisdom</td><td>10</td><td>—</td><td>10</td><td>+0</td></tr><tr><td>Charisma</td><td>10</td><td>—</td><td>10</td><td>+0</td></tr></tbody></table></div>
+<p>That’s a 17 in the casting ability (+3 to spell attacks and save DCs), a 15 Constitution for hit points and concentration saves, and 14 Dexterity for Armor Class and initiative.</p>
+<h2>Popular 27-point spreads</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Spread</th><th scope="col">Scores</th><th scope="col">Modifiers before bonuses</th><th scope="col">Good for</th></tr></thead><tbody><tr><td>Standard array</td><td>15, 14, 13, 12, 10, 8</td><td>+5</td><td>The same scores every table uses; a safe default for any class.</td></tr><tr><td>Three 15s</td><td>15, 15, 15, 8, 8, 8</td><td>+3</td><td>Maximum focus: great in three abilities, weak in the other three.</td></tr><tr><td>Two 15s</td><td>15, 15, 13, 12, 8, 8</td><td>+4</td><td>Two strong abilities (attack and defense, or casting and Constitution) with a useful third.</td></tr><tr><td>15, 14, 14</td><td>15, 14, 14, 10, 10, 8</td><td>+5</td><td>Good at three things, with no penalty except the dump score.</td></tr><tr><td>All-rounder</td><td>13, 13, 13, 13, 13, 10</td><td>+5</td><td>No weak spots, but no score above 13 until bonuses.</td></tr></tbody></table></div>
+<p>The standard array costs exactly 27 points, so it’s one of the builds point buy can make. If your table rolls instead, the <a href="ability-score-roller.html">ability score roller</a> shows what a rolled set is worth in points. For where to put your best scores, see step 3 of the character creation guide and the class pages.</p>
+<section class="guide"><h2>Common questions</h2>
+<div class="faq"><h3>How many points do you get for point buy in 5e?</h3><p>27, in both the 2014 and the 2024 rules. Every score starts at 8, and the costs run from 0 points for an 8 to 9 points for a 15.</p></div>
+<div class="faq"><h3>Can you go above 15 with point buy?</h3><p>Not with the points themselves: 15 is the cap before bonuses. Your racial bonus (2014) or background bonus (2024) then adds up to +2, so the highest 1st-level score is 17.</p></div>
+<div class="faq"><h3>Did point buy change in the 2024 rules?</h3><p>No. The budget, the 8–15 range and the costs are the same. What changed is where the bonuses come from: in 2024 they come from your background rather than your species, as +2 and +1 or +1, +1 and +1.</p></div>
+<div class="faq"><h3>Is point buy better than rolling?</h3><p>It’s fairer rather than stronger. A rolled 4d6-drop-lowest set is worth about 31 points on average if you price it the same way, but 34% of rolled sets come out worse than 27 points. The <a href="ability-score-roller.html">ability score roller</a> has the full odds.</p></div>
+<div class="faq"><h3>Can a score start below 8?</h3><p>Not in point buy. The lowest you can buy is 8, which costs nothing. A racial penalty from an older 2014 race (like a kobold’s −2 Strength) can take a score below 8 afterwards; use Custom for that.</p></div>
+<div class="faq"><h3>Do I have to spend all 27 points?</h3><p>No, but unspent points are simply lost, so there’s no reason to keep them. The calculator shows how many you have left.</p></div>
+</section>
+<h2>Related pages</h2>
+<ul class="link-grid"><li><a href="ability-score-roller.html">Ability score roller</a> <span class="faint">4d6 drop lowest</span></li></ul>
+<h2>More free tools</h2>
+<ul class="link-grid"><li><a href="encounter-calculator.html">Encounter calculator</a></li><li><a href="dice-roller.html">Dice roller</a></li><li><a href="ability-score-roller.html">Ability score roller</a></li><li><a href="multiclass-spell-slot-calculator.html">Multiclass spell slot calculator</a></li></ul>
+<aside class="cta">
+  <h2>Build a character and play from the sheet</h2>
+  <p>Table Keeper is a free D&amp;D 5e character builder with a sheet you can actually play from: spell slots, hit points, rests and a dice roller wired to everything. No ads, no account needed.</p>
+  <p><a class="button primary" href="../index.html">Open the character builder</a></p>
+</aside>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Table Keeper</strong> is a free character builder, playable sheet, and game-master toolkit for tabletop sessions.</p>
+    <p class="tiny">This page includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC, available at <a href="https://dnd.wizards.com/resources/systems-reference-document" rel="noopener">dnd.wizards.com</a>. The SRD 5.1 is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode" rel="noopener">Creative Commons Attribution 4.0 International License</a>.</p>
+    <p class="tiny">This page includes material taken from the System Reference Document 5.2 (“SRD 5.2”) by Wizards of the Coast LLC, available at <a href="https://www.dndbeyond.com/srd" rel="noopener">dndbeyond.com/srd</a>. The SRD 5.2 is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode" rel="noopener">Creative Commons Attribution 4.0 International License</a>.</p>
+    <p class="tiny">Not affiliated with, endorsed or sponsored by Wizards of the Coast. Dungeons &amp; Dragons and D&amp;D are trademarks of Wizards of the Coast LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

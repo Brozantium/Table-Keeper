@@ -1,0 +1,18 @@
+{
+  "name": "Table Keeper",
+  "short_name": "Table Keeper",
+  "description": "Free D&D 5e character builder and playable character sheet. No ads.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eee2c9",
+  "theme_color": "#1f6d68",
+  "icons": [
+    {
+      "src": "./table-keeper-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

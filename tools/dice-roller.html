@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D&amp;D Dice Roller: d20, Advantage &amp; 4d6kh3 Notation</title>
+<meta name="description" content="Free online D&amp;D dice roller: type any notation like 2d6+3 or 4d6kh3, roll d4 to d100 in one tap, roll with advantage and keep a history.">
+<link rel="canonical" href="dice-roller.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Table Keeper">
+<meta property="og:title" content="D&amp;D Dice Roller: d20, Advantage &amp; 4d6kh3 Notation">
+<meta property="og:description" content="Free online D&amp;D dice roller: type any notation like 2d6+3 or 4d6kh3, roll d4 to d100 in one tap, roll with advantage and keep a history.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="D&amp;D Dice Roller: d20, Advantage &amp; 4d6kh3 Notation">
+<meta name="twitter:description" content="Free online D&amp;D dice roller: type any notation like 2d6+3 or 4d6kh3, roll d4 to d100 in one tap, roll with advantage and keep a history.">
+<meta name="theme-color" content="#1f6d68">
+<link rel="icon" type="image/svg+xml" href="../table-keeper-mark.svg">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="stylesheet" href="../pages.css">
+<link rel="stylesheet" href="../tools.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does 4d6kh3 mean?","acceptedAnswer":{"@type":"Answer","text":"Roll four six-sided dice and keep the highest three. It’s the usual way to roll an ability score, and it means the same as 4d6dl1 (drop the lowest one). The ability score roller rolls all six at once."}},{"@type":"Question","name":"How do advantage and disadvantage work in 5e?","acceptedAnswer":{"@type":"Answer","text":"Roll two d20s and take the higher (advantage) or the lower (disadvantage). They only apply to d20 rolls: attack rolls, ability checks and saving throws, never to damage."}},{"@type":"Question","name":"What is a d% roll?","acceptedAnswer":{"@type":"Answer","text":"A percentile roll: a number from 1 to 100, made at the table with two ten-sided dice (one for the tens, one for the ones). It’s the same as d100 here."}},{"@type":"Question","name":"Does advantage stack?","acceptedAnswer":{"@type":"Answer","text":"No. Several sources of advantage still give you one extra die, and any advantage plus any disadvantage cancel out completely."}},{"@type":"Question","name":"Is this dice roller fair?","acceptedAnswer":{"@type":"Answer","text":"Yes. It uses the browser’s cryptographic random numbers and rejects out-of-range values so no face is favored."}},{"@type":"Question","name":"Can I roll damage for a critical hit?","acceptedAnswer":{"@type":"Answer","text":"Double the dice, not the modifier: a 1d8+3 hit becomes 2d8+3 on a critical hit. Type the doubled roll into the box."}}]}</script>
+<script defer src="dice-roller.js"></script>
+<script src="../theme.js"></script>
+<link rel="stylesheet" href="../theme-system.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../index.html"><span class="brand-mark">TK</span> Table Keeper</a>
+    <a class="button primary header-cta" href="../index.html">Open the builder</a>
+  </div>
+  <nav class="wrap site-nav" aria-label="Site">
+    <a href="../tools.html" aria-current="page">Tools</a>
+  </nav>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">›</span> <a href="../tools.html">Tools</a> <span aria-hidden="true">›</span> <span aria-current="page">Dice roller</span></nav>
+
+<h1>D&amp;D dice roller</h1>
+<p class="lead">Roll any dice: type notation like 2d6+3 or 4d6kh3, tap a die for a quick roll, and switch on advantage or disadvantage for d20s. Your last 20 rolls stay in the history.</p>
+<noscript><p class="tool-note">This calculator needs JavaScript to run. Everything it works out is explained below, with the tables to do it by hand.</p></noscript>
+<form class="tool dr" id="dr" aria-label="Dice roller">
+<div class="dr-entry">
+<label for="dr-expr" class="dr-label">Dice to roll</label>
+<div class="dr-line"><input id="dr-expr" name="expr" type="text" value="1d20+5" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="dr-help"><button type="submit" class="primary">Roll</button></div>
+<p class="faint" id="dr-help">Like 2d6+3, 4d6kh3, d% or 1d8+1d6+2.</p>
+</div>
+<div class="dr-quick" role="group" aria-label="Roll one die"><button type="button" data-roll="1d4">d4</button><button type="button" data-roll="1d6">d6</button><button type="button" data-roll="1d8">d8</button><button type="button" data-roll="1d10">d10</button><button type="button" data-roll="1d12">d12</button><button type="button" data-roll="1d20">d20</button><button type="button" data-roll="1d100">d100</button></div>
+<fieldset class="choice"><legend>d20 rolls</legend><div class="seg"><label><input type="radio" name="mode" value="normal" checked><span>Normal</span></label><label><input type="radio" name="mode" value="adv"><span>Advantage</span></label><label><input type="radio" name="mode" value="dis"><span>Disadvantage</span></label></div></fieldset>
+<div class="tool-out dr-out" id="dr-result" aria-live="polite" aria-atomic="true">
+<p class="dr-total"><strong class="big" id="dr-total">—</strong></p>
+<p class="dr-detail" id="dr-detail">Type some dice or pick a die, then roll.</p>
+</div>
+<div class="dr-history-box">
+<h2 class="dr-history-title">History</h2>
+<ol class="dr-history" id="dr-history"></ol>
+<p class="faint" id="dr-empty">Your last 20 rolls show here.</p>
+<button type="button" id="dr-clear">Clear history</button>
+</div>
+</form>
+
+<h2>Dice notation cheat sheet</h2>
+<p>Dice notation is how D&amp;D writes a roll: the number of dice, a “d”, then the number of sides. <strong>3d8</strong> means roll three eight-sided dice and add them up. A number after a plus or minus sign is a flat modifier. The roller understands all of these:</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Notation</th><th scope="col">What it means</th><th scope="col">Range</th><th scope="col">Average</th></tr></thead><tbody><tr><td><code>1d20</code></td><td>One twenty-sided die</td><td>1–20</td><td>10.5</td></tr><tr><td><code>1d20+5</code></td><td>A d20 plus a modifier: an attack roll or check</td><td>6–25</td><td>15.5</td></tr><tr><td><code>2d6+3</code></td><td>Two six-sided dice plus 3: a greatsword hit</td><td>5–15</td><td>10</td></tr><tr><td><code>1d8+1d6+2</code></td><td>Different dice added together</td><td>4–16</td><td>10</td></tr><tr><td><code>8d6</code></td><td>Eight six-sided dice: a Fireball</td><td>8–48</td><td>28</td></tr><tr><td><code>4d6kh3</code></td><td>Roll four, keep the highest three (same as 4d6dl1)</td><td>3–18</td><td>12.24</td></tr><tr><td><code>2d20kh1</code></td><td>Advantage: roll two d20s, keep the higher</td><td>1–20</td><td>13.83</td></tr><tr><td><code>2d20kl1</code></td><td>Disadvantage: keep the lower</td><td>1–20</td><td>7.18</td></tr><tr><td><code>d%</code></td><td>Percentile: 1 to 100 (the same as d100)</td><td>1–100</td><td>50.5</td></tr></tbody></table></div>
+<ul>
+<li><strong>kh</strong> and <strong>kl</strong> keep the highest or lowest dice (<code>k</code> alone means kh); <strong>dl</strong> and <strong>dh</strong> drop the lowest or highest (<code>d</code> alone after a roll means dl).</li>
+<li>Terms can be subtracted as well as added: <code>1d20-1</code>, <code>2d6-1d4</code>.</li>
+<li>Up to 100 dice per term and up to 1,000 sides per die.</li>
+</ul>
+<h2>Advantage and disadvantage</h2>
+<p>With advantage you roll two d20s and use the higher; with disadvantage, the lower. Pick Advantage or Disadvantage above and every single d20 in your roll is rolled twice, so <code>1d20+5</code> with advantage becomes <code>2d20kh1+5</code>. Other dice aren’t affected.</p>
+<p>Advantage raises the average d20 from 10.5 to 13.83, and disadvantage lowers it to 7.18. Near the middle of the die that’s worth about +5 on a single roll; at the ends it’s worth much less.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Need to roll</th><th scope="col">Normal</th><th scope="col">Advantage</th><th scope="col">Disadvantage</th></tr></thead><tbody><tr><td>2 or higher</td><td>95%</td><td>99.75%</td><td>90.25%</td></tr><tr><td>5 or higher</td><td>80%</td><td>96%</td><td>64%</td></tr><tr><td>8 or higher</td><td>65%</td><td>87.75%</td><td>42.25%</td></tr><tr><td>10 or higher</td><td>55%</td><td>79.75%</td><td>30.25%</td></tr><tr><td>11 or higher</td><td>50%</td><td>75%</td><td>25%</td></tr><tr><td>12 or higher</td><td>45%</td><td>69.75%</td><td>20.25%</td></tr><tr><td>15 or higher</td><td>30%</td><td>51%</td><td>9%</td></tr><tr><td>18 or higher</td><td>15%</td><td>27.75%</td><td>2.25%</td></tr><tr><td>20 or higher</td><td>5%</td><td>9.75%</td><td>0.25%</td></tr></tbody></table></div>
+<p>Advantage and disadvantage don’t stack: two sources of advantage still mean two dice, and if you have both advantage and disadvantage they cancel out and you roll one d20, however many sources of each you have.</p>
+<h2>Average of each die</h2>
+<p>A die’s average is half of one more than its number of sides, so the average of several dice is easy to work out: 8d6 averages 8 × 3.5 = 28. That’s what the fixed damage in a monster’s stat block is based on.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">d4</th><th scope="col">d6</th><th scope="col">d8</th><th scope="col">d10</th><th scope="col">d12</th><th scope="col">d20</th><th scope="col">d100</th></tr></thead><tbody><tr><td>2.5</td><td>3.5</td><td>4.5</td><td>5.5</td><td>6.5</td><td>10.5</td><td>50.5</td></tr></tbody></table></div>
+<h2>Is it random?</h2>
+<p>Every roll uses your browser’s cryptographic random number generator (<code>crypto.getRandomValues</code>), the same source browsers use for encryption keys, and throws away the rare values that would favor low numbers, so each face of each die is exactly as likely as the others. Nothing is sent anywhere: the rolls happen on your device.</p>
+<p>Playing a character? The <a href="../index.html">character builder</a>’s sheet has a dice roller wired to your attacks, spells and checks, so you don’t type any notation at all. For spell damage, see the spell list.</p>
+<section class="guide"><h2>Common questions</h2>
+<div class="faq"><h3>What does 4d6kh3 mean?</h3><p>Roll four six-sided dice and keep the highest three. It’s the usual way to roll an ability score, and it means the same as 4d6dl1 (drop the lowest one). The <a href="ability-score-roller.html">ability score roller</a> rolls all six at once.</p></div>
+<div class="faq"><h3>How do advantage and disadvantage work in 5e?</h3><p>Roll two d20s and take the higher (advantage) or the lower (disadvantage). They only apply to d20 rolls: attack rolls, ability checks and saving throws, never to damage.</p></div>
+<div class="faq"><h3>What is a d% roll?</h3><p>A percentile roll: a number from 1 to 100, made at the table with two ten-sided dice (one for the tens, one for the ones). It’s the same as d100 here.</p></div>
+<div class="faq"><h3>Does advantage stack?</h3><p>No. Several sources of advantage still give you one extra die, and any advantage plus any disadvantage cancel out completely.</p></div>
+<div class="faq"><h3>Is this dice roller fair?</h3><p>Yes. It uses the browser’s cryptographic random numbers and rejects out-of-range values so no face is favored.</p></div>
+<div class="faq"><h3>Can I roll damage for a critical hit?</h3><p>Double the dice, not the modifier: a 1d8+3 hit becomes 2d8+3 on a critical hit. Type the doubled roll into the box.</p></div>
+</section>
+<h2>Related pages</h2>
+<ul class="link-grid"><li><a href="ability-score-roller.html">Ability score roller</a></li></ul>
+<h2>More free tools</h2>
+<ul class="link-grid"><li><a href="point-buy-calculator.html">Point buy calculator</a></li><li><a href="encounter-calculator.html">Encounter calculator</a></li><li><a href="ability-score-roller.html">Ability score roller</a></li><li><a href="multiclass-spell-slot-calculator.html">Multiclass spell slot calculator</a></li></ul>
+<aside class="cta">
+  <h2>Build a character and play from the sheet</h2>
+  <p>Table Keeper is a free D&amp;D 5e character builder with a sheet you can actually play from: spell slots, hit points, rests and a dice roller wired to everything. No ads, no account needed.</p>
+  <p><a class="button primary" href="../index.html">Open the character builder</a></p>
+</aside>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Table Keeper</strong> is a free character builder, playable sheet, and game-master toolkit for tabletop sessions.</p>
+    
+    <p class="tiny">Not affiliated with, endorsed or sponsored by Wizards of the Coast. Dungeons &amp; Dragons and D&amp;D are trademarks of Wizards of the Coast LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

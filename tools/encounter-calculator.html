@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5e Encounter Calculator (2024 &amp; 2014 XP Budgets) | Table Keeper</title>
+<meta name="description" content="Build balanced D&amp;D 5e encounters: add your party and monsters, then see total XP, difficulty and XP per character under 2024 or 2014 rules.">
+<link rel="canonical" href="encounter-calculator.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Table Keeper">
+<meta property="og:title" content="5e Encounter Calculator (2024 &amp; 2014 XP Budgets) | Table Keeper">
+<meta property="og:description" content="Build balanced D&amp;D 5e encounters: add your party and monsters, then see total XP, difficulty and XP per character under 2024 or 2014 rules.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5e Encounter Calculator (2024 &amp; 2014 XP Budgets) | Table Keeper">
+<meta name="twitter:description" content="Build balanced D&amp;D 5e encounters: add your party and monsters, then see total XP, difficulty and XP per character under 2024 or 2014 rules.">
+<meta name="theme-color" content="#1f6d68">
+<link rel="icon" type="image/svg+xml" href="../table-keeper-mark.svg">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="stylesheet" href="../pages.css">
+<link rel="stylesheet" href="../tools.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I work out encounter difficulty in the 2024 rules?","acceptedAnswer":{"@type":"Answer","text":"Look up each character’s XP budget for the difficulty you want (Low, Moderate or High), add them together, and spend that much XP on monsters. There are no multipliers for the number of monsters in the 2024 rules."}},{"@type":"Question","name":"What is the encounter multiplier in 5e?","acceptedAnswer":{"@type":"Answer","text":"It’s the 2014 Dungeon Master’s Guide’s adjustment for the number of monsters: ×1 for one, ×1.5 for two, ×2 for three to six, up to ×4 for fifteen or more, moved a step up for parties of one or two and a step down for six or more. It only affects difficulty, not the XP the characters earn."}},{"@type":"Question","name":"Why does the same fight rate differently in 2014 and 2024?","acceptedAnswer":{"@type":"Answer","text":"The 2014 rules multiply monster XP for groups of monsters and compare it with thresholds; the 2024 rules use plain XP against budgets. Crowds of weak monsters rate much harder under 2014 rules, and single monsters rate about the same."}},{"@type":"Question","name":"How much XP does each character get?","acceptedAnswer":{"@type":"Answer","text":"Divide the monsters’ total XP by the number of characters. In 2014 use the real XP, not the adjusted XP. The calculator shows it as XP per character."}},{"@type":"Question","name":"Can I use 2014 monsters with the 2024 budgets?","acceptedAnswer":{"@type":"Answer","text":"Yes. XP by challenge rating is the same in both editions, so any stat block with a CR works with either method."}},{"@type":"Question","name":"Where do the monsters in the search come from?","acceptedAnswer":{"@type":"Answer","text":"From the 334 monsters in the SRD 5.1, each with a full stat block on this site. For other monsters, add a row with their challenge rating."}}]}</script>
+<script defer src="encounter-calculator.js"></script>
+<script src="../theme.js"></script>
+<link rel="stylesheet" href="../theme-system.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../index.html"><span class="brand-mark">TK</span> Table Keeper</a>
+    <a class="button primary header-cta" href="../index.html">Open the builder</a>
+  </div>
+  <nav class="wrap site-nav" aria-label="Site">
+    <a href="../tools.html" aria-current="page">Tools</a>
+  </nav>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">›</span> <a href="../tools.html">Tools</a> <span aria-hidden="true">›</span> <span aria-current="page">Encounter calculator</span></nav>
+
+<h1>5e encounter calculator</h1>
+<p class="lead">Add your party and your monsters to see how hard the fight is: the 2024 XP budgets (Low, Moderate, High) or the 2014 thresholds with encounter multipliers, plus the XP each character earns.</p>
+<noscript><p class="tool-note">This calculator needs JavaScript to run. Everything it works out is explained below, with the tables to do it by hand.</p></noscript>
+<form class="tool enc" id="enc" data-rules="{&quot;budgets&quot;:{&quot;1&quot;:[50,75,100],&quot;2&quot;:[100,150,200],&quot;3&quot;:[150,225,400],&quot;4&quot;:[250,375,500],&quot;5&quot;:[500,750,1100],&quot;6&quot;:[600,1000,1400],&quot;7&quot;:[750,1300,1700],&quot;8&quot;:[1000,1700,2100],&quot;9&quot;:[1300,2000,2600],&quot;10&quot;:[1600,2300,3100],&quot;11&quot;:[1900,2900,4100],&quot;12&quot;:[2200,3700,4700],&quot;13&quot;:[2600,4200,5400],&quot;14&quot;:[2900,4900,6200],&quot;15&quot;:[3300,5400,7800],&quot;16&quot;:[3800,6100,9800],&quot;17&quot;:[4500,7200,11700],&quot;18&quot;:[5000,8700,14200],&quot;19&quot;:[5500,10700,17200],&quot;20&quot;:[6400,13200,22000]},&quot;thresholds&quot;:{&quot;1&quot;:[25,50,75,100],&quot;2&quot;:[50,100,150,200],&quot;3&quot;:[75,150,225,400],&quot;4&quot;:[125,250,375,500],&quot;5&quot;:[250,500,750,1100],&quot;6&quot;:[300,600,900,1400],&quot;7&quot;:[350,750,1100,1700],&quot;8&quot;:[450,900,1400,2100],&quot;9&quot;:[550,1100,1600,2400],&quot;10&quot;:[600,1200,1900,2800],&quot;11&quot;:[800,1600,2400,3600],&quot;12&quot;:[1000,2000,3000,4500],&quot;13&quot;:[1100,2200,3400,5100],&quot;14&quot;:[1250,2500,3800,5700],&quot;15&quot;:[1400,2800,4300,6400],&quot;16&quot;:[1600,3200,4800,7200],&quot;17&quot;:[2000,3900,5900,8800],&quot;18&quot;:[2100,4200,6300,9500],&quot;19&quot;:[2400,4900,7300,10900],&quot;20&quot;:[2800,5700,8500,12700]},&quot;steps&quot;:[0.5,1,1.5,2,2.5,3,4,5],&quot;xp&quot;:{&quot;0&quot;:10,&quot;1&quot;:200,&quot;2&quot;:450,&quot;3&quot;:700,&quot;4&quot;:1100,&quot;5&quot;:1800,&quot;6&quot;:2300,&quot;7&quot;:2900,&quot;8&quot;:3900,&quot;9&quot;:5000,&quot;10&quot;:5900,&quot;11&quot;:7200,&quot;12&quot;:8400,&quot;13&quot;:10000,&quot;14&quot;:11500,&quot;15&quot;:13000,&quot;16&quot;:15000,&quot;17&quot;:18000,&quot;18&quot;:20000,&quot;19&quot;:22000,&quot;20&quot;:25000,&quot;21&quot;:33000,&quot;22&quot;:41000,&quot;23&quot;:50000,&quot;24&quot;:62000,&quot;25&quot;:75000,&quot;26&quot;:90000,&quot;27&quot;:105000,&quot;28&quot;:120000,&quot;29&quot;:135000,&quot;30&quot;:155000,&quot;1/8&quot;:25,&quot;1/4&quot;:50,&quot;1/2&quot;:100},&quot;names2024&quot;:[&quot;Low&quot;,&quot;Moderate&quot;,&quot;High&quot;],&quot;names2014&quot;:[&quot;Easy&quot;,&quot;Medium&quot;,&quot;Hard&quot;,&quot;Deadly&quot;]}" data-index="monsters.json" aria-label="Encounter calculator">
+<div class="tool-bar">
+<fieldset class="choice"><legend>Rules</legend><div class="seg"><label><input type="radio" name="edition" value="2024" checked><span>2024 (XP budget)</span></label><label><input type="radio" name="edition" value="2014"><span>2014 (DMG)</span></label></div></fieldset>
+</div>
+<div class="enc-cols">
+<fieldset class="enc-group"><legend>Party</legend>
+<ul class="rows" id="enc-party"><li class="row"><label class="field"><span>Characters</span><input type="number" name="count" min="1" max="20" value="4" inputmode="numeric"></label><label class="field"><span>Level</span><select name="level"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option></select></label><button type="button" class="remove" aria-label="Remove this group" disabled>Remove</button></li></ul>
+<button type="button" id="enc-add-party">Add characters of another level</button>
+</fieldset>
+<fieldset class="enc-group"><legend>Monsters</legend>
+<ul class="rows" id="enc-monsters"><li class="row"><label class="field"><span>Count</span><input type="number" name="count" min="1" max="50" value="4" inputmode="numeric"></label><label class="field"><span>Challenge</span><select name="cr"><option value="0">0 (10 XP)</option><option value="1/8">1/8 (25 XP)</option><option value="1/4">1/4 (50 XP)</option><option value="1/2" selected>1/2 (100 XP)</option><option value="1">1 (200 XP)</option><option value="2">2 (450 XP)</option><option value="3">3 (700 XP)</option><option value="4">4 (1,100 XP)</option><option value="5">5 (1,800 XP)</option><option value="6">6 (2,300 XP)</option><option value="7">7 (2,900 XP)</option><option value="8">8 (3,900 XP)</option><option value="9">9 (5,000 XP)</option><option value="10">10 (5,900 XP)</option><option value="11">11 (7,200 XP)</option><option value="12">12 (8,400 XP)</option><option value="13">13 (10,000 XP)</option><option value="14">14 (11,500 XP)</option><option value="15">15 (13,000 XP)</option><option value="16">16 (15,000 XP)</option><option value="17">17 (18,000 XP)</option><option value="18">18 (20,000 XP)</option><option value="19">19 (22,000 XP)</option><option value="20">20 (25,000 XP)</option><option value="21">21 (33,000 XP)</option><option value="22">22 (41,000 XP)</option><option value="23">23 (50,000 XP)</option><option value="24">24 (62,000 XP)</option><option value="25">25 (75,000 XP)</option><option value="26">26 (90,000 XP)</option><option value="27">27 (105,000 XP)</option><option value="28">28 (120,000 XP)</option><option value="29">29 (135,000 XP)</option><option value="30">30 (155,000 XP)</option></select></label><button type="button" class="remove" aria-label="Remove this monster" disabled>Remove</button><span class="row-name"></span></li></ul>
+<button type="button" id="enc-add-monster">Add monsters by challenge rating</button>
+<div class="enc-search">
+<label for="enc-q">Or find a monster by name</label>
+<input type="search" id="enc-q" autocomplete="off" spellcheck="false" placeholder="Goblin, owlbear, lich…" aria-describedby="enc-q-status">
+<p class="faint" id="enc-q-status" role="status" aria-live="polite">Searches the 334 SRD monsters.</p>
+<ul class="enc-results" id="enc-results"></ul>
+</div>
+</fieldset>
+</div>
+<template id="enc-party-row"><li class="row"><label class="field"><span>Characters</span><input type="number" name="count" min="1" max="20" value="1" inputmode="numeric"></label><label class="field"><span>Level</span><select name="level"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option></select></label><button type="button" class="remove" aria-label="Remove this group">Remove</button></li></template>
+<template id="enc-monster-row"><li class="row"><label class="field"><span>Count</span><input type="number" name="count" min="1" max="50" value="1" inputmode="numeric"></label><label class="field"><span>Challenge</span><select name="cr"><option value="0">0 (10 XP)</option><option value="1/8">1/8 (25 XP)</option><option value="1/4">1/4 (50 XP)</option><option value="1/2">1/2 (100 XP)</option><option value="1" selected>1 (200 XP)</option><option value="2">2 (450 XP)</option><option value="3">3 (700 XP)</option><option value="4">4 (1,100 XP)</option><option value="5">5 (1,800 XP)</option><option value="6">6 (2,300 XP)</option><option value="7">7 (2,900 XP)</option><option value="8">8 (3,900 XP)</option><option value="9">9 (5,000 XP)</option><option value="10">10 (5,900 XP)</option><option value="11">11 (7,200 XP)</option><option value="12">12 (8,400 XP)</option><option value="13">13 (10,000 XP)</option><option value="14">14 (11,500 XP)</option><option value="15">15 (13,000 XP)</option><option value="16">16 (15,000 XP)</option><option value="17">17 (18,000 XP)</option><option value="18">18 (20,000 XP)</option><option value="19">19 (22,000 XP)</option><option value="20">20 (25,000 XP)</option><option value="21">21 (33,000 XP)</option><option value="22">22 (41,000 XP)</option><option value="23">23 (50,000 XP)</option><option value="24">24 (62,000 XP)</option><option value="25">25 (75,000 XP)</option><option value="26">26 (90,000 XP)</option><option value="27">27 (105,000 XP)</option><option value="28">28 (120,000 XP)</option><option value="29">29 (135,000 XP)</option><option value="30">30 (155,000 XP)</option></select></label><button type="button" class="remove" aria-label="Remove this monster">Remove</button><span class="row-name"></span></li></template>
+<div class="tool-out enc-out">
+<p class="verdict"><span class="faint">Difficulty</span> <strong class="big" id="enc-band">Low</strong></p>
+<p id="enc-summary" role="status" aria-live="polite">400 XP fits the Low budget of 600 XP for 4 characters.</p>
+<dl class="facts">
+<div><dt>Monster XP</dt><dd id="enc-total">400</dd></div>
+<div data-edition="2014" hidden><dt>Multiplier</dt><dd id="enc-mult">×1</dd></div>
+<div data-edition="2014" hidden><dt>Adjusted XP</dt><dd id="enc-adjusted">400</dd></div>
+<div><dt>XP per character</dt><dd id="enc-per">100</dd></div>
+</dl>
+<div class="table-wrap"><table class="enc-bands"><thead><tr><th scope="col">Difficulty</th><th scope="col" class="num" id="enc-bands-head">Party budget</th></tr></thead><tbody id="enc-bands"><tr class="is-current"><td>Low <span class="here">this encounter</span></td><td class="num">600 XP</td></tr><tr><td>Moderate</td><td class="num">900 XP</td></tr><tr><td>High</td><td class="num">1,600 XP</td></tr></tbody></table></div>
+</div>
+<div class="tool-actions"><button type="button" id="enc-copy">Copy link to this encounter</button></div>
+<p class="tool-msg" id="enc-msg" role="status" aria-live="polite"></p>
+</form>
+
+<h2>How the 2024 XP budget works</h2>
+<p>The 2024 rules (the Dungeon Master’s Guide and the SRD 5.2) keep it simple. Pick a difficulty, look up each character’s XP budget for that difficulty, and add them up. That’s how much monster XP the encounter can spend. There are no multipliers: ten goblins cost exactly ten goblins’ XP.</p>
+<ul>
+<li><strong>Low</strong>: a fight the party should win without much trouble, though it can still cost resources.</li>
+<li><strong>Moderate</strong>: a real fight. Without healing or other resources it can go badly.</li>
+<li><strong>High</strong>: could be deadly for one or more characters. Use sparingly, and give players a way out.</li>
+</ul>
+<p>The calculator rates an encounter by the smallest budget its XP fits in, and calls anything over the High budget “Beyond High”.</p>
+<h3>XP budget per character (2024)</h3>
+<div class="table-wrap"><table><thead><tr><th scope="col">Level</th><th scope="col">Low</th><th scope="col">Moderate</th><th scope="col">High</th></tr></thead><tbody><tr><td>1</td><td>50</td><td>75</td><td>100</td></tr><tr><td>2</td><td>100</td><td>150</td><td>200</td></tr><tr><td>3</td><td>150</td><td>225</td><td>400</td></tr><tr><td>4</td><td>250</td><td>375</td><td>500</td></tr><tr><td>5</td><td>500</td><td>750</td><td>1,100</td></tr><tr><td>6</td><td>600</td><td>1,000</td><td>1,400</td></tr><tr><td>7</td><td>750</td><td>1,300</td><td>1,700</td></tr><tr><td>8</td><td>1,000</td><td>1,700</td><td>2,100</td></tr><tr><td>9</td><td>1,300</td><td>2,000</td><td>2,600</td></tr><tr><td>10</td><td>1,600</td><td>2,300</td><td>3,100</td></tr><tr><td>11</td><td>1,900</td><td>2,900</td><td>4,100</td></tr><tr><td>12</td><td>2,200</td><td>3,700</td><td>4,700</td></tr><tr><td>13</td><td>2,600</td><td>4,200</td><td>5,400</td></tr><tr><td>14</td><td>2,900</td><td>4,900</td><td>6,200</td></tr><tr><td>15</td><td>3,300</td><td>5,400</td><td>7,800</td></tr><tr><td>16</td><td>3,800</td><td>6,100</td><td>9,800</td></tr><tr><td>17</td><td>4,500</td><td>7,200</td><td>11,700</td></tr><tr><td>18</td><td>5,000</td><td>8,700</td><td>14,200</td></tr><tr><td>19</td><td>5,500</td><td>10,700</td><td>17,200</td></tr><tr><td>20</td><td>6,400</td><td>13,200</td><td>22,000</td></tr></tbody></table></div>
+<h2>How the 2014 thresholds and multipliers work</h2>
+<p>The 2014 Dungeon Master’s Guide gives each character four XP thresholds (Easy, Medium, Hard and Deadly). Add up the party’s thresholds, then add up the monsters’ XP and multiply it by a number that grows with the number of monsters, because every extra monster is another set of attacks each round. The result is the adjusted XP: compare it with the thresholds, and the highest threshold it reaches is the difficulty.</p>
+<p>The multiplier also shifts with party size: for a party of one or two characters use the next step up, and for six or more use the next step down. The Guide also suggests leaving out of the count any monster whose challenge rating is far below the others’, since it barely changes the fight. Adjusted XP is only for judging difficulty; the characters earn the monsters’ real XP.</p>
+<h3>Encounter multipliers (2014)</h3>
+<div class="table-wrap"><table><thead><tr><th scope="col">Monsters</th><th scope="col">Party of 1–2</th><th scope="col">Party of 3–5</th><th scope="col">Party of 6+</th></tr></thead><tbody><tr><td>1</td><td>×1.5</td><td>×1</td><td>×0.5</td></tr><tr><td>2</td><td>×2</td><td>×1.5</td><td>×1</td></tr><tr><td>3–6</td><td>×2.5</td><td>×2</td><td>×1.5</td></tr><tr><td>7–10</td><td>×3</td><td>×2.5</td><td>×2</td></tr><tr><td>11–14</td><td>×4</td><td>×3</td><td>×2.5</td></tr><tr><td>15 or more</td><td>×5</td><td>×4</td><td>×3</td></tr></tbody></table></div>
+<h3>XP thresholds per character (2014)</h3>
+<div class="table-wrap"><table><thead><tr><th scope="col">Level</th><th scope="col">Easy</th><th scope="col">Medium</th><th scope="col">Hard</th><th scope="col">Deadly</th></tr></thead><tbody><tr><td>1</td><td>25</td><td>50</td><td>75</td><td>100</td></tr><tr><td>2</td><td>50</td><td>100</td><td>150</td><td>200</td></tr><tr><td>3</td><td>75</td><td>150</td><td>225</td><td>400</td></tr><tr><td>4</td><td>125</td><td>250</td><td>375</td><td>500</td></tr><tr><td>5</td><td>250</td><td>500</td><td>750</td><td>1,100</td></tr><tr><td>6</td><td>300</td><td>600</td><td>900</td><td>1,400</td></tr><tr><td>7</td><td>350</td><td>750</td><td>1,100</td><td>1,700</td></tr><tr><td>8</td><td>450</td><td>900</td><td>1,400</td><td>2,100</td></tr><tr><td>9</td><td>550</td><td>1,100</td><td>1,600</td><td>2,400</td></tr><tr><td>10</td><td>600</td><td>1,200</td><td>1,900</td><td>2,800</td></tr><tr><td>11</td><td>800</td><td>1,600</td><td>2,400</td><td>3,600</td></tr><tr><td>12</td><td>1,000</td><td>2,000</td><td>3,000</td><td>4,500</td></tr><tr><td>13</td><td>1,100</td><td>2,200</td><td>3,400</td><td>5,100</td></tr><tr><td>14</td><td>1,250</td><td>2,500</td><td>3,800</td><td>5,700</td></tr><tr><td>15</td><td>1,400</td><td>2,800</td><td>4,300</td><td>6,400</td></tr><tr><td>16</td><td>1,600</td><td>3,200</td><td>4,800</td><td>7,200</td></tr><tr><td>17</td><td>2,000</td><td>3,900</td><td>5,900</td><td>8,800</td></tr><tr><td>18</td><td>2,100</td><td>4,200</td><td>6,300</td><td>9,500</td></tr><tr><td>19</td><td>2,400</td><td>4,900</td><td>7,300</td><td>10,900</td></tr><tr><td>20</td><td>2,800</td><td>5,700</td><td>8,500</td><td>12,700</td></tr></tbody></table></div>
+<h2>XP by challenge rating</h2>
+<p>A monster’s XP comes from its challenge rating and is the same in both editions. Every monster stat block lists it.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">CR</th><th scope="col">XP</th><th scope="col">CR</th><th scope="col">XP</th><th scope="col">CR</th><th scope="col">XP</th></tr></thead><tbody><tr><td>0</td><td>10</td><td>9</td><td>5,000</td><td>21</td><td>33,000</td></tr><tr><td>1/8</td><td>25</td><td>10</td><td>5,900</td><td>22</td><td>41,000</td></tr><tr><td>1/4</td><td>50</td><td>11</td><td>7,200</td><td>23</td><td>50,000</td></tr><tr><td>1/2</td><td>100</td><td>12</td><td>8,400</td><td>24</td><td>62,000</td></tr><tr><td>1</td><td>200</td><td>13</td><td>10,000</td><td>25</td><td>75,000</td></tr><tr><td>2</td><td>450</td><td>14</td><td>11,500</td><td>26</td><td>90,000</td></tr><tr><td>3</td><td>700</td><td>15</td><td>13,000</td><td>27</td><td>105,000</td></tr><tr><td>4</td><td>1,100</td><td>16</td><td>15,000</td><td>28</td><td>120,000</td></tr><tr><td>5</td><td>1,800</td><td>17</td><td>18,000</td><td>29</td><td>135,000</td></tr><tr><td>6</td><td>2,300</td><td>18</td><td>20,000</td><td>30</td><td>155,000</td></tr><tr><td>7</td><td>2,900</td><td>19</td><td>22,000</td><td></td><td></td></tr><tr><td>8</td><td>3,900</td><td>20</td><td>25,000</td><td></td><td></td></tr></tbody></table></div>
+<h2>Worked examples</h2>
+<p><strong>Four level 3 characters against four orcs (CR 1/2, 100 XP each).</strong> The monsters are worth 400 XP.</p>
+<ul>
+<li>2024: the party’s budgets are 600 (Low), 900 (Moderate), 1,600 (High). 400 XP fits the Low budget, so it’s a <strong>Low</strong> encounter.</li>
+<li>2014: four monsters use the ×2 multiplier, for 800 adjusted XP. The party’s thresholds are 300 (Easy), 600 (Medium), 900 (Hard), 1,600 (Deadly), so it’s <strong>Medium</strong>.</li>
+</ul>
+<p><strong>Four level 5 characters against one troll (CR 5, 1,800 XP) or four ogres (CR 2, 450 XP each, 1,800 XP in all).</strong> The XP is the same, and under 2024 rules so is the rating: both are Low. Under 2014 rules the troll is Easy (×1, 1,800 adjusted XP) but the ogres are Hard (×2, 3,600 adjusted XP). That’s the main difference between the editions: 2014 charges extra for groups of monsters, 2024 doesn’t.</p>
+<h2>Beyond the numbers</h2>
+<ul>
+<li><strong>Count actions, not just XP.</strong> A single monster gets one turn a round against the party’s four or five. Solo monsters without legendary actions often fall faster than their XP suggests; add a few minions or pick one with legendary actions.</li>
+<li><strong>Watch the monsters’ damage at low levels.</strong> A 1st-level wizard can drop to one hit from a CR 2 monster, whatever the budget says.</li>
+<li><strong>Terrain and surprise matter.</strong> Cover, ranged attackers on a ledge or a fight in the dark can move an encounter up a band.</li>
+<li><strong>Spread difficulty across the day.</strong> A string of Low and Moderate fights wears a party down as effectively as one High fight, and spends different resources.</li>
+</ul>
+<section class="guide"><h2>Common questions</h2>
+<div class="faq"><h3>How do I work out encounter difficulty in the 2024 rules?</h3><p>Look up each character’s XP budget for the difficulty you want (Low, Moderate or High), add them together, and spend that much XP on monsters. There are no multipliers for the number of monsters in the 2024 rules.</p></div>
+<div class="faq"><h3>What is the encounter multiplier in 5e?</h3><p>It’s the 2014 Dungeon Master’s Guide’s adjustment for the number of monsters: ×1 for one, ×1.5 for two, ×2 for three to six, up to ×4 for fifteen or more, moved a step up for parties of one or two and a step down for six or more. It only affects difficulty, not the XP the characters earn.</p></div>
+<div class="faq"><h3>Why does the same fight rate differently in 2014 and 2024?</h3><p>The 2014 rules multiply monster XP for groups of monsters and compare it with thresholds; the 2024 rules use plain XP against budgets. Crowds of weak monsters rate much harder under 2014 rules, and single monsters rate about the same.</p></div>
+<div class="faq"><h3>How much XP does each character get?</h3><p>Divide the monsters’ total XP by the number of characters. In 2014 use the real XP, not the adjusted XP. The calculator shows it as XP per character.</p></div>
+<div class="faq"><h3>Can I use 2014 monsters with the 2024 budgets?</h3><p>Yes. XP by challenge rating is the same in both editions, so any stat block with a CR works with either method.</p></div>
+<div class="faq"><h3>Where do the monsters in the search come from?</h3><p>From the 334 monsters in the SRD 5.1, each with a full stat block on this site. For other monsters, add a row with their challenge rating.</p></div>
+</section>
+<h2>More free tools</h2>
+<ul class="link-grid"><li><a href="point-buy-calculator.html">Point buy calculator</a></li><li><a href="dice-roller.html">Dice roller</a></li><li><a href="ability-score-roller.html">Ability score roller</a></li><li><a href="multiclass-spell-slot-calculator.html">Multiclass spell slot calculator</a></li></ul>
+<aside class="cta">
+  <h2>Build a character and play from the sheet</h2>
+  <p>Table Keeper is a free D&amp;D 5e character builder with a sheet you can actually play from: spell slots, hit points, rests and a dice roller wired to everything. No ads, no account needed.</p>
+  <p><a class="button primary" href="../index.html">Open the character builder</a></p>
+</aside>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Table Keeper</strong> is a free character builder, playable sheet, and game-master toolkit for tabletop sessions.</p>
+    <p class="tiny">This page includes material taken from the System Reference Document 5.2 (“SRD 5.2”) by Wizards of the Coast LLC, available at <a href="https://www.dndbeyond.com/srd" rel="noopener">dndbeyond.com/srd</a>. The SRD 5.2 is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode" rel="noopener">Creative Commons Attribution 4.0 International License</a>.</p>
+    <p class="tiny">Not affiliated with, endorsed or sponsored by Wizards of the Coast. Dungeons &amp; Dragons and D&amp;D are trademarks of Wizards of the Coast LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

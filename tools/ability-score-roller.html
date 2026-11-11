@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5e Ability Score Roller: 4d6 Drop Lowest Stat Roller</title>
+<meta name="description" content="Roll D&amp;D 5e ability scores with 4d6 drop lowest, 3d6 or 4d6 rerolling 1s. See each die, your total modifiers and the set’s point-buy value.">
+<link rel="canonical" href="ability-score-roller.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Table Keeper">
+<meta property="og:title" content="5e Ability Score Roller: 4d6 Drop Lowest Stat Roller">
+<meta property="og:description" content="Roll D&amp;D 5e ability scores with 4d6 drop lowest, 3d6 or 4d6 rerolling 1s. See each die, your total modifiers and the set’s point-buy value.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5e Ability Score Roller: 4d6 Drop Lowest Stat Roller">
+<meta name="twitter:description" content="Roll D&amp;D 5e ability scores with 4d6 drop lowest, 3d6 or 4d6 rerolling 1s. See each die, your total modifiers and the set’s point-buy value.">
+<meta name="theme-color" content="#1f6d68">
+<link rel="icon" type="image/svg+xml" href="../table-keeper-mark.svg">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="stylesheet" href="../pages.css">
+<link rel="stylesheet" href="../tools.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What’s the average of 4d6 drop lowest?","acceptedAnswer":{"@type":"Answer","text":"12.24 per score (exactly 15,869 ÷ 1,296), so about 73.5 for a set of six. Plain 3d6 averages 10.5."}},{"@type":"Question","name":"Is rolling better than point buy?","acceptedAnswer":{"@type":"Answer","text":"On average, slightly: a rolled set is worth about 31 points against point buy’s 27. But 34% of sets come out worse than point buy, and the spread between players at the same table can be large. Many groups roll for fun and allow point buy for anyone unhappy with the result."}},{"@type":"Question","name":"What should I do if my rolls are terrible?","acceptedAnswer":{"@type":"Answer","text":"Ask your DM. Common table rules let you reroll a set whose modifiers add up to +0 or less, or whose highest score is below 14, or let you take the standard array instead."}},{"@type":"Question","name":"Can I rearrange the scores after rolling?","acceptedAnswer":{"@type":"Answer","text":"Yes. In 5e you roll six scores and assign them to the abilities you want. Rolling “in order” (the first score is Strength, and so on) is an old-school variant, not the default."}},{"@type":"Question","name":"Does 2024 D&D still use 4d6 drop lowest?","acceptedAnswer":{"@type":"Answer","text":"Yes. The 2024 Player’s Handbook keeps random generation (4d6, drop the lowest) as an option beside the standard array and point buy."}},{"@type":"Question","name":"Are these rolls random?","acceptedAnswer":{"@type":"Answer","text":"Yes. Each die uses the browser’s cryptographic random number generator, with rejection sampling so every face is equally likely."}}]}</script>
+<script defer src="ability-score-roller.js"></script>
+<script src="../theme.js"></script>
+<link rel="stylesheet" href="../theme-system.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../index.html"><span class="brand-mark">TK</span> Table Keeper</a>
+    <a class="button primary header-cta" href="../index.html">Open the builder</a>
+  </div>
+  <nav class="wrap site-nav" aria-label="Site">
+    <a href="../tools.html" aria-current="page">Tools</a>
+  </nav>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">›</span> <a href="../tools.html">Tools</a> <span aria-hidden="true">›</span> <span aria-current="page">Ability score roller</span></nav>
+
+<h1>5e ability score roller</h1>
+<p class="lead">Roll six ability scores with 4d6 drop lowest, straight 3d6 or 4d6 rerolling 1s. You see every die and the one dropped, your total modifiers and what the set is worth next to point buy.</p>
+<noscript><p class="tool-note">This calculator needs JavaScript to run. Everything it works out is explained below, with the tables to do it by hand.</p></noscript>
+<form class="tool asr" id="asr" data-costs="{&quot;3&quot;:-9,&quot;4&quot;:-6,&quot;5&quot;:-4,&quot;6&quot;:-2,&quot;7&quot;:-1,&quot;8&quot;:0,&quot;9&quot;:1,&quot;10&quot;:2,&quot;11&quot;:3,&quot;12&quot;:4,&quot;13&quot;:5,&quot;14&quot;:7,&quot;15&quot;:9,&quot;16&quot;:12,&quot;17&quot;:15,&quot;18&quot;:19}" aria-label="Ability score roller">
+<div class="tool-bar">
+<fieldset class="choice"><legend>Method</legend><div class="seg"><label><input type="radio" name="method" value="4d6" checked><span>4d6 drop lowest</span></label><label><input type="radio" name="method" value="3d6"><span>3d6</span></label><label><input type="radio" name="method" value="4d6r1"><span>4d6, reroll 1s</span></label></div></fieldset>
+<button type="button" class="primary" id="asr-roll">Reroll all six</button>
+</div>
+<ol class="asr-list" id="asr-list" aria-label="Your six scores">
+<li><span class="asr-dice"><span class="die">6</span><span class="die">5</span><span class="die">4</span><span class="die dropped"><span class="sr-only">dropped </span>2</span></span><span class="asr-score">15</span><span class="asr-mod">+2</span></li>
+<li><span class="asr-dice"><span class="die">5</span><span class="die">5</span><span class="die">3</span><span class="die dropped"><span class="sr-only">dropped </span>1</span></span><span class="asr-score">13</span><span class="asr-mod">+1</span></li>
+<li><span class="asr-dice"><span class="die">6</span><span class="die">3</span><span class="die">3</span><span class="die dropped"><span class="sr-only">dropped </span>2</span></span><span class="asr-score">12</span><span class="asr-mod">+1</span></li>
+<li><span class="asr-dice"><span class="die">4</span><span class="die">4</span><span class="die">4</span><span class="die dropped"><span class="sr-only">dropped </span>1</span></span><span class="asr-score">12</span><span class="asr-mod">+1</span></li>
+<li><span class="asr-dice"><span class="die">5</span><span class="die">3</span><span class="die dropped"><span class="sr-only">dropped </span>2</span><span class="die">2</span></span><span class="asr-score">10</span><span class="asr-mod">+0</span></li>
+<li><span class="asr-dice"><span class="die">3</span><span class="die">3</span><span class="die">2</span><span class="die dropped"><span class="sr-only">dropped </span>1</span></span><span class="asr-score">8</span><span class="asr-mod">−1</span></li>
+</ol>
+<dl class="facts asr-facts">
+<div><dt>Total</dt><dd id="asr-total">70</dd></div>
+<div><dt>Modifiers</dt><dd id="asr-mods">+4</dd></div>
+<div><dt>Point-buy value</dt><dd id="asr-points">24</dd></div>
+</dl>
+<p class="asr-compare">Standard array for comparison: 15, 14, 13, 12, 10, 8. Total 72, modifiers +5, worth 27 points.</p>
+<p class="sr-only" id="asr-live" aria-live="polite"></p>
+</form>
+
+<h2>How 4d6 drop lowest works</h2>
+<p>Roll four six-sided dice, ignore the lowest and add up the other three. Do that six times and you have six scores from 3 to 18 to assign to Strength, Dexterity, Constitution, Intelligence, Wisdom and Charisma however you like. It’s one of the three methods in both the 2014 and 2024 Player’s Handbooks, beside the standard array and <a href="point-buy-calculator.html">point buy</a>. Your racial (2014) or background (2024) bonuses go on afterwards, as with any method.</p>
+<p>Dropping the lowest die pushes the results up: a single 4d6-drop-lowest score averages 12.24, against 10.5 for plain 3d6. Rolling a 1 hurts less, because it’s usually the die you drop.</p>
+<h2>The odds of each score</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Score</th><th scope="col">Modifier</th><th scope="col">4d6 drop lowest</th><th scope="col">This or higher</th><th scope="col">3d6</th><th scope="col">4d6, reroll 1s</th></tr></thead><tbody><tr><td>3</td><td>−4</td><td>0.08%</td><td>100%</td><td>0.46%</td><td>0%</td></tr><tr><td>4</td><td>−3</td><td>0.31%</td><td>99.9%</td><td>1.39%</td><td>0%</td></tr><tr><td>5</td><td>−3</td><td>0.77%</td><td>99.6%</td><td>2.78%</td><td>0%</td></tr><tr><td>6</td><td>−2</td><td>1.62%</td><td>98.8%</td><td>4.63%</td><td>0.16%</td></tr><tr><td>7</td><td>−2</td><td>2.93%</td><td>97.2%</td><td>6.94%</td><td>0.64%</td></tr><tr><td>8</td><td>−1</td><td>4.78%</td><td>94.3%</td><td>9.72%</td><td>1.6%</td></tr><tr><td>9</td><td>−1</td><td>7.02%</td><td>89.5%</td><td>11.57%</td><td>3.36%</td></tr><tr><td>10</td><td>+0</td><td>9.41%</td><td>82.5%</td><td>12.5%</td><td>6.08%</td></tr><tr><td>11</td><td>+0</td><td>11.42%</td><td>73.1%</td><td>12.5%</td><td>9.28%</td></tr><tr><td>12</td><td>+1</td><td>12.89%</td><td>61.7%</td><td>11.57%</td><td>12.64%</td></tr><tr><td>13</td><td>+1</td><td>13.27%</td><td>48.8%</td><td>9.72%</td><td>15.04%</td></tr><tr><td>14</td><td>+2</td><td>12.35%</td><td>35.5%</td><td>6.94%</td><td>16%</td></tr><tr><td>15</td><td>+2</td><td>10.11%</td><td>23.1%</td><td>4.63%</td><td>14.56%</td></tr><tr><td>16</td><td>+3</td><td>7.25%</td><td>13%</td><td>2.78%</td><td>11.2%</td></tr><tr><td>17</td><td>+3</td><td>4.17%</td><td>5.8%</td><td>1.39%</td><td>6.72%</td></tr><tr><td>18</td><td>+4</td><td>1.62%</td><td>1.6%</td><td>0.46%</td><td>2.72%</td></tr></tbody></table></div>
+<p>With 4d6 drop lowest the most likely score is 13, and the chance of an 18 on a single score is 1.62% (21 of the 1,296 ways four dice can land). Over a set of six, the odds of at least one 18 are 9.3%.</p>
+<h2>What a typical set looks like</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Method</th><th scope="col">Average score</th><th scope="col">Average set, highest to lowest</th><th scope="col">Average total modifiers</th><th scope="col">At least one 18</th><th scope="col">Worth less than 27 points</th></tr></thead><tbody><tr><td>4d6 drop lowest</td><td>12.24</td><td>15.7, 14.2, 13, 11.8, 10.4, 8.5</td><td>+5.2</td><td>9.3%</td><td>34.2%</td></tr><tr><td>3d6</td><td>10.5</td><td>14.2, 12.5, 11.1, 9.9, 8.5, 6.8</td><td>+0</td><td>2.7%</td><td>84.3%</td></tr><tr><td>4d6, reroll 1s, drop lowest</td><td>13.43</td><td>16.3, 15, 14, 13, 11.9, 10.3</td><td>+8.8</td><td>15.2%</td><td>6.4%</td></tr></tbody></table></div>
+<p>For comparison, the standard array (15, 14, 13, 12, 10, 8) has total modifiers of +5. The average 4d6-drop-lowest set is a little stronger, at about +5.2, but it varies a lot from set to set. The 3d6 column is the old-school way; rerolling 1s is a common house rule that makes characters noticeably stronger.</p>
+<h2>What a rolled set is worth in point buy</h2>
+<p>Point buy only prices scores from 8 to 15, so to compare a rolled set this tool extends the cost table the way many groups do: 16 costs 12, 17 costs 15 and 18 costs 19, and scores under 8 give points back (7 is −1, 6 is −2, 5 is −4, 4 is −6, 3 is −9). It isn’t an official rule, just a yardstick: point buy gives everyone 27 points, and an average 4d6-drop-lowest set is worth about 31.4.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Score</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th><th scope="col">10</th><th scope="col">11</th><th scope="col">12</th><th scope="col">13</th><th scope="col">14</th><th scope="col">15</th><th scope="col">16</th><th scope="col">17</th><th scope="col">18</th></tr></thead><tbody><tr><td>Points</td><td>−9</td><td>−6</td><td>−4</td><td>−2</td><td>−1</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>7</td><td>9</td><td>12</td><td>15</td><td>19</td></tr></tbody></table></div>
+<section class="guide"><h2>Common questions</h2>
+<div class="faq"><h3>What’s the average of 4d6 drop lowest?</h3><p>12.24 per score (exactly 15,869 ÷ 1,296), so about 73.5 for a set of six. Plain 3d6 averages 10.5.</p></div>
+<div class="faq"><h3>Is rolling better than point buy?</h3><p>On average, slightly: a rolled set is worth about 31 points against point buy’s 27. But 34% of sets come out worse than point buy, and the spread between players at the same table can be large. Many groups roll for fun and allow point buy for anyone unhappy with the result.</p></div>
+<div class="faq"><h3>What should I do if my rolls are terrible?</h3><p>Ask your DM. Common table rules let you reroll a set whose modifiers add up to +0 or less, or whose highest score is below 14, or let you take the standard array instead.</p></div>
+<div class="faq"><h3>Can I rearrange the scores after rolling?</h3><p>Yes. In 5e you roll six scores and assign them to the abilities you want. Rolling “in order” (the first score is Strength, and so on) is an old-school variant, not the default.</p></div>
+<div class="faq"><h3>Does 2024 D&amp;D still use 4d6 drop lowest?</h3><p>Yes. The 2024 Player’s Handbook keeps random generation (4d6, drop the lowest) as an option beside the standard array and point buy.</p></div>
+<div class="faq"><h3>Are these rolls random?</h3><p>Yes. Each die uses the browser’s cryptographic random number generator, with rejection sampling so every face is equally likely.</p></div>
+</section>
+<h2>Related pages</h2>
+<ul class="link-grid"><li><a href="point-buy-calculator.html">Point buy calculator</a></li><li><a href="dice-roller.html">Dice roller</a></li></ul>
+<h2>More free tools</h2>
+<ul class="link-grid"><li><a href="point-buy-calculator.html">Point buy calculator</a></li><li><a href="encounter-calculator.html">Encounter calculator</a></li><li><a href="dice-roller.html">Dice roller</a></li><li><a href="multiclass-spell-slot-calculator.html">Multiclass spell slot calculator</a></li></ul>
+<aside class="cta">
+  <h2>Build a character and play from the sheet</h2>
+  <p>Table Keeper is a free D&amp;D 5e character builder with a sheet you can actually play from: spell slots, hit points, rests and a dice roller wired to everything. No ads, no account needed.</p>
+  <p><a class="button primary" href="../index.html">Open the character builder</a></p>
+</aside>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Table Keeper</strong> is a free character builder, playable sheet, and game-master toolkit for tabletop sessions.</p>
+    
+    <p class="tiny">Not affiliated with, endorsed or sponsored by Wizards of the Coast. Dungeons &amp; Dragons and D&amp;D are trademarks of Wizards of the Coast LLC.</p>
+  </div>
+</footer>
+</body>
+</html>
