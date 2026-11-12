@@ -1,5 +1,13 @@
 import OBR, { type Player, type Theme } from "@owlbear-rodeo/sdk";
-import { EXTENSION_ID, LOCAL_CHANNEL, PLAYER_STATE_KEY, TOKEN_CHARACTER_KEY } from "./constants";
+import {
+  EXTENSION_ID,
+  LOCAL_CHANNEL,
+  PARTY_CHANGE_EVENT,
+  PLAYER_CHANGE_EVENT,
+  PLAYER_STATE_KEY,
+  ROOM_UPDATE_EVENT,
+  TOKEN_CHARACTER_KEY,
+} from "./constants";
 import { readCharacterSummaries } from "./characters";
 import type { CharacterSummary } from "./types";
 
@@ -35,7 +43,7 @@ async function publishCharacters(): Promise<CharacterSummary[]> {
 function createIntegrationPanel(
   player: Pick<Player, "name" | "role">,
   initialPartySize: number,
-): void {
+): () => void {
   const root = document.createElement("aside");
   root.className = "obr-integration";
   root.innerHTML = `
@@ -74,22 +82,24 @@ function createIntegrationPanel(
     panel.hidden = !open;
     trigger.setAttribute("aria-expanded", String(open));
   };
-  trigger.addEventListener("click", () => setOpen(panel.hidden));
-  close.addEventListener("click", () => setOpen(false));
+  const openPanel = () => setOpen(panel.hidden);
+  const closePanel = () => setOpen(false);
+  trigger.addEventListener("click", openPanel);
+  close.addEventListener("click", closePanel);
 
-  OBR.party.onChange((party) => {
+  const unsubscribeParty = OBR.party.onChange((party) => {
     partySize = party.length;
     renderIdentity();
-    window.dispatchEvent(new CustomEvent("dnd:obr-party", { detail: { players: party } }));
+    window.dispatchEvent(new CustomEvent(PARTY_CHANGE_EVENT, { detail: { players: party } }));
   });
-  OBR.player.onChange((nextPlayer) => {
+  const unsubscribePlayer = OBR.player.onChange((nextPlayer) => {
     renderIdentity(nextPlayer.name, nextPlayer.role);
-    window.dispatchEvent(new CustomEvent("dnd:obr-player", { detail: nextPlayer }));
+    window.dispatchEvent(new CustomEvent(PLAYER_CHANGE_EVENT, { detail: nextPlayer }));
   });
 
   const localChannel = new BroadcastChannel(LOCAL_CHANNEL);
   let reloadTimer: number | undefined;
-  localChannel.addEventListener("message", (event) => {
+  const handleLocalMessage = (event: MessageEvent) => {
     if (event.data?.type === "STATUS") {
       status.textContent = event.data.message;
       status.dataset.level = event.data.level;
@@ -97,7 +107,7 @@ function createIntegrationPanel(
       status.textContent = "Room storage synchronized.";
       delete status.dataset.level;
     } else if (event.data?.type === "REMOTE_UPDATE") {
-      window.dispatchEvent(new CustomEvent("dnd:obr-room-update"));
+      window.dispatchEvent(new CustomEvent(ROOM_UPDATE_EVENT));
       status.textContent = "Room data updated.";
       if (
         window.location.pathname.endsWith("/table.html") ||
@@ -108,7 +118,8 @@ function createIntegrationPanel(
         reloadTimer = window.setTimeout(() => window.location.reload(), 600);
       }
     }
-  });
+  };
+  localChannel.addEventListener("message", handleLocalMessage);
 
   link.addEventListener("click", async () => {
     const characters = await publishCharacters();
@@ -175,11 +186,25 @@ function createIntegrationPanel(
     }
     characterList.hidden = false;
   });
+
+  return () => {
+    window.clearTimeout(reloadTimer);
+    unsubscribeParty();
+    unsubscribePlayer();
+    localChannel.removeEventListener("message", handleLocalMessage);
+    localChannel.close();
+    trigger.removeEventListener("click", openPanel);
+    close.removeEventListener("click", closePanel);
+    root.remove();
+  };
 }
 
-export async function initializePopover(): Promise<void> {
-  if (!OBR.isAvailable) return;
+let initialization: Promise<void> | undefined;
+
+async function startPopover(signal?: AbortSignal): Promise<void> {
+  if (!OBR.isAvailable || signal?.aborted) return;
   await waitForReady();
+  if (signal?.aborted) return;
   document.documentElement.classList.add("is-obr-extension");
 
   try {
@@ -192,10 +217,26 @@ export async function initializePopover(): Promise<void> {
     const playerName = localStorage.getItem("dnd.playerName");
     if (!playerName?.trim()) localStorage.setItem("dnd.playerName", name);
     applyTheme(theme);
-    OBR.theme.onChange(applyTheme);
+    const unsubscribeTheme = OBR.theme.onChange(applyTheme);
     await publishCharacters();
-    createIntegrationPanel({ name, role }, party.length);
+    if (signal?.aborted) {
+      unsubscribeTheme();
+      return;
+    }
+    const removePanel = createIntegrationPanel({ name, role }, party.length);
+    const cleanup = () => {
+      unsubscribeTheme();
+      removePanel();
+      document.documentElement.classList.remove("is-obr-extension");
+    };
+    signal?.addEventListener("abort", cleanup, { once: true });
   } catch (error) {
+    document.documentElement.classList.remove("is-obr-extension");
     console.error(`[${EXTENSION_ID}] Owlbear initialization failed`, error);
   }
+}
+
+export function initializePopover(signal?: AbortSignal): Promise<void> {
+  initialization ??= startPopover(signal);
+  return initialization;
 }

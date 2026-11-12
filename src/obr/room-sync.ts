@@ -53,16 +53,21 @@ function applyEntry(key: string, entry: StorageEntry): void {
   else localStorage.setItem(key, entry.value);
 }
 
-export async function startRoomSync(): Promise<void> {
+type StopRoomSync = () => void;
+
+let roomSync: Promise<StopRoomSync> | undefined;
+
+async function initializeRoomSync(): Promise<StopRoomSync> {
   const playerId = await OBR.player.getId();
   const role = await OBR.player.getRole();
   const latest = new Map<string, StorageEntry>();
   let applyingRemote = false;
+  let stopped = false;
   let persistTimer: number | undefined;
   const localChannel = new BroadcastChannel(LOCAL_CHANNEL);
 
   const persist = async () => {
-    if (role !== "GM") return;
+    if (role !== "GM" || stopped) return;
     const state: RoomState = {
       version: 1,
       entries: Object.fromEntries(latest),
@@ -119,7 +124,7 @@ export async function startRoomSync(): Promise<void> {
     if (!latest.has(key)) latest.set(key, entry);
   }
 
-  window.addEventListener("storage", (event) => {
+  const handleStorage = (event: StorageEvent) => {
     if (
       applyingRemote ||
       event.storageArea !== localStorage ||
@@ -140,9 +145,10 @@ export async function startRoomSync(): Promise<void> {
       { destination: "REMOTE" },
     );
     schedulePersist();
-  });
+  };
+  window.addEventListener("storage", handleStorage);
 
-  OBR.broadcast.onMessage(SYNC_CHANNEL, ({ data }) => {
+  const unsubscribeBroadcast = OBR.broadcast.onMessage(SYNC_CHANNEL, ({ data }) => {
     if (!data || typeof data !== "object") return;
     const message = data as SyncMessage;
     if (
@@ -167,14 +173,37 @@ export async function startRoomSync(): Promise<void> {
     }
   });
 
-  OBR.room.onMetadataChange((metadata) => {
+  const unsubscribeRoom = OBR.room.onMetadataChange((metadata) => {
     acceptEntries(parseRoomState(metadata[ROOM_STATE_KEY]).entries, false, true);
   });
 
-  await OBR.broadcast.sendMessage(
-    SYNC_CHANNEL,
-    { type: "REQUEST", requesterId: playerId } satisfies SyncMessage,
-    { destination: "REMOTE" },
-  );
+  try {
+    await OBR.broadcast.sendMessage(
+      SYNC_CHANNEL,
+      { type: "REQUEST", requesterId: playerId } satisfies SyncMessage,
+      { destination: "REMOTE" },
+    );
+  } catch (error) {
+    console.error(`[${EXTENSION_ID}] Unable to request room snapshot`, error);
+  }
   schedulePersist();
+
+  return () => {
+    if (stopped) return;
+    stopped = true;
+    window.clearTimeout(persistTimer);
+    window.removeEventListener("storage", handleStorage);
+    unsubscribeBroadcast();
+    unsubscribeRoom();
+    localChannel.close();
+    roomSync = undefined;
+  };
+}
+
+export function startRoomSync(): Promise<StopRoomSync> {
+  roomSync ??= initializeRoomSync().catch((error) => {
+    roomSync = undefined;
+    throw error;
+  });
+  return roomSync;
 }

@@ -4,6 +4,9 @@ export const PLAYER_STATE_KEY = `${EXTENSION_ID}/characters`;
 export const TOKEN_CHARACTER_KEY = `${EXTENSION_ID}/character`;
 export const SYNC_CHANNEL = `${EXTENSION_ID}/storage-sync`;
 export const LOCAL_CHANNEL = `${EXTENSION_ID}/local`;
+export const PARTY_CHANGE_EVENT = `${EXTENSION_ID}:obr-party`;
+export const PLAYER_CHANGE_EVENT = `${EXTENSION_ID}:obr-player`;
+export const ROOM_UPDATE_EVENT = `${EXTENSION_ID}:obr-room-update`;
 
 export const ROOM_STORAGE_PREFIXES = ["dnd.campaignTable.v1:", "dnd.campaignArchive.v1:"] as const;
 

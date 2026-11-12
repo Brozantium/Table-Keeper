@@ -22,6 +22,8 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [
       copyImportedSiteAssets(),
+      importedBundleBasePath(),
+      webManifestAssetPaths(),
       extensionEntryPoints(),
       react(),
       tailwindcss(),
@@ -52,6 +54,58 @@ export default defineConfig(({ mode }) => {
     },
   }
 })
+
+/**
+ * The imported v4 application bundle contains Vite's old absolute preload
+ * helper (`"/" + asset`). Keep the original bundle intact, but make its
+ * production transform use the base path installed before the bundle loads.
+ */
+function importedBundleBasePath(): Plugin {
+  const absolutePreloadHelper = 'function(e){return`/`+e}'
+  const baseAwarePreloadHelper =
+    'function(e){return(window.__TABLE_KEEPER_BASE_PATH__||`/`)+e}'
+
+  return {
+    name: 'table-keeper-imported-bundle-base-path',
+    generateBundle(_options, bundle) {
+      let replacements = 0
+      for (const output of Object.values(bundle)) {
+        if (output.type !== 'chunk') continue
+        const matches = output.code.split(absolutePreloadHelper).length - 1
+        replacements += matches
+        if (matches) {
+          output.code = output.code.replace(absolutePreloadHelper, baseAwarePreloadHelper)
+        }
+      }
+      if (replacements === 0) {
+        this.error('The imported v4 preload helper was not found; refusing an unsafe build.')
+      }
+    },
+  }
+}
+
+/** Keep the hashed /assets manifest's icon relative to the site root. */
+function webManifestAssetPaths(): Plugin {
+  return {
+    name: 'table-keeper-web-manifest-asset-paths',
+    generateBundle(_options, bundle) {
+      for (const output of Object.values(bundle)) {
+        if (output.type !== 'asset' || !output.fileName.endsWith('.webmanifest')) continue
+        const source =
+          typeof output.source === 'string'
+            ? output.source
+            : Buffer.from(output.source).toString('utf8')
+        const manifest = JSON.parse(source) as {
+          icons?: Array<{ src?: string }>
+        }
+        for (const icon of manifest.icons ?? []) {
+          if (icon.src?.startsWith('./')) icon.src = `../${icon.src.slice(2)}`
+        }
+        output.source = JSON.stringify(manifest, null, 2)
+      }
+    },
+  }
+}
 
 function copyImportedSiteAssets(): Plugin {
   const excludedDirectories = new Set([
